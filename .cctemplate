@@ -1,0 +1,12 @@
+{
+    "metadata": {
+        "version": "1"
+    },
+    "templates": [
+        {
+            "path": "dotnet/cloud-function-hello-world",
+            "name": ".NET: Cloud Function Hello World",
+            "description": "A simple .NET Cloud Function sample"
+        }
+    ]
+}
