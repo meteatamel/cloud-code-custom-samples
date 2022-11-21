@@ -1,3 +1,9 @@
-# Custom samples for Cloud Code
+# Custom templates for Cloud Code
 
-TODO
+This repository contains some useful custom templates for Cloud Code. To use
+these templates, you can follow this
+[doc](https://cloud.google.com/code/docs/vscode/set-up-sample-repo) page.
+
+## Templates
+
+* [.NET: Cloud Functions - Hello World](dotnet/cloud-functions/hello-world) - A simple .NET Cloud Functions tempalte.
