@@ -5,8 +5,13 @@
     "templates": [
         {
             "path": "dotnet/cloud-functions/HelloHttp",
-            "name": ".NET: Cloud Functions - Hello Http",
+            "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"
+        },
+        {
+            "path": "dotnet/cloud-functions/HelloGcs",
+            "name": ".NET: Cloud Functions - HelloGcs",
+            "description": "A Cloud Storage triggered .NET Cloud Functions template"
         }
     ]
 }
