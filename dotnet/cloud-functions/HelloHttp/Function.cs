@@ -2,7 +2,7 @@ using Google.Cloud.Functions.Framework;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 
-namespace cloud_function_hello_world;
+namespace HelloHttp;
 
 public class Function : IHttpFunction
 {

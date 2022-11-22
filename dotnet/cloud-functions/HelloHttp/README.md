@@ -1,6 +1,6 @@
-# .NET: Cloud Functions - Hello World
+# .NET: Cloud Functions - HelloHttp
 
-A simple .NET Cloud Functions app.
+ An HTTP triggered .NET Cloud Functions template.
 
 ## Test locally
 
@@ -37,9 +37,9 @@ Cloud Code does not support deploying .NET functions yet but you can deploy with
 `gcloud`:
 
 ```sh
-gcloud functions deploy dotnet-hello-world \
+gcloud functions deploy hello-http-function \
   --allow-unauthenticated \
-  --entry-point cloud_function_hello_world.Function \
+  --entry-point HelloHttp.Function \
   --gen2 \
   --region us-central1 \
   --runtime dotnet6 \
@@ -51,7 +51,7 @@ gcloud functions deploy dotnet-hello-world \
 You can test with `Invoke function via HTTP` in Cloud Code or with `gcloud`:
 
 ```sh
-gcloud functions call dotnet-hello-world \
+gcloud functions call hello-http-function \
   --gen2 \
   --region us-central1
 ```

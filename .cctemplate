@@ -4,9 +4,9 @@
     },
     "templates": [
         {
-            "path": "dotnet/cloud-functions/hello-world",
-            "name": ".NET: Cloud Functions - Hello World",
-            "description": "A simple .NET Cloud Functions sample"
+            "path": "dotnet/cloud-functions/HelloHttp",
+            "name": ".NET: Cloud Functions - Hello Http",
+            "description": "An HTTP triggered .NET Cloud Functions template"
         }
     ]
 }
