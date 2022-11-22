@@ -8,3 +8,5 @@ these templates, you can follow this
 
 * [.NET: Cloud Functions - HelloHttp](dotnet/cloud-functions/HelloHttp) - An
   HTTP triggered .NET Cloud Functions template.
+* [.NET: Cloud Functions - HelloGcs](dotnet/cloud-functions/HelloGcs) - A
+  Cloud Storage triggered .NET Cloud Functions template.

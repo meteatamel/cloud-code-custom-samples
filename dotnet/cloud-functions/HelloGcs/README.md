@@ -1,6 +1,6 @@
-# .NET: Cloud Functions - HelloHttp
+# .NET: Cloud Functions - HelloGcs
 
- An HTTP triggered .NET Cloud Functions template.
+A Cloud Storage triggered .NET Cloud Functions template.
 
 ## Test locally
 
@@ -18,12 +18,14 @@ Run [test_local.sh](scripts/test.sh) to test the function locally:
 ```sh
 ./scripts/test_local.sh
 
-Hello World!
+TODO
 ```
 
 ## Before deploying to Google Cloud
 
-Run [setup.sh](scripts/setup.sh) to enable required services:
+Run [setup.sh](scripts/setup.sh) to enable required services, grant the
+`pubsub.publisher` role to the Cloud Storage service account and create a Google
+Cloud Storage (GCS) bucket:
 
 ```sh
 ./scripts/setup.sh
@@ -41,8 +43,6 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 ```
 
 ## Test in Google Cloud
-
-You can test with `Invoke function via HTTP` in Cloud Code or with `gcloud`.
 
 Run [test_cloud.sh](scripts/test_cloud.sh) to test the function in Google Cloud:
 
