@@ -6,4 +6,5 @@ these templates, you can follow this
 
 ## Templates
 
-* [.NET: Cloud Functions - Hello World](dotnet/cloud-functions/hello-world) - A simple .NET Cloud Functions tempalte.
+* [.NET: Cloud Functions - Hello World](dotnet/cloud-functions/hello-world) - A
+  simple .NET Cloud Functions template.
