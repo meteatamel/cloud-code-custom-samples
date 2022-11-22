@@ -13,12 +13,14 @@ dotnet run
 2022-11-22T10:48:04.589Z [Microsoft.Hosting.Lifetime] [info] Now listening on: http://127.0.0.1:8080
 ```
 
-Run [test_local.sh](scripts/test.sh) to test the function locally:
+Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
+test the function locally:
 
 ```sh
-./scripts/test_local.sh
+./test_local.sh
 
-TODO
+< HTTP/1.1 200 OK
+< Content-Length: 0
 ```
 
 ## Before deploying to Google Cloud
@@ -28,7 +30,7 @@ Run [setup.sh](scripts/setup.sh) to enable required services, grant the
 Cloud Storage (GCS) bucket:
 
 ```sh
-./scripts/setup.sh
+./setup.sh
 ```
 
 ## Deploy to Google Cloud
@@ -39,7 +41,7 @@ Cloud Code does not support deploying .NET functions yet but you can deploy with
 Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 
 ```sh
-./scripts/deploy.sh
+./deploy.sh
 ```
 
 ## Test in Google Cloud
@@ -47,5 +49,5 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 Run [test_cloud.sh](scripts/test_cloud.sh) to test the function in Google Cloud:
 
 ```sh
-./scripts/test_cloud.sh
+./test_cloud.sh
 ```
