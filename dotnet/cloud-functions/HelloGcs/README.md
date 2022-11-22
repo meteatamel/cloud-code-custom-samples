@@ -39,7 +39,7 @@ Cloud Code does not support deploying .NET functions yet but you can deploy with
 Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 
 ```sh
-./script/deploy.sh
+./scripts/deploy.sh
 ```
 
 ## Test in Google Cloud
@@ -47,5 +47,5 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 Run [test_cloud.sh](scripts/test_cloud.sh) to test the function in Google Cloud:
 
 ```sh
-./script/test_cloud.sh
+./scripts/test_cloud.sh
 ```
