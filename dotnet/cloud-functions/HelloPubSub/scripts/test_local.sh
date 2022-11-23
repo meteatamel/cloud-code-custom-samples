@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "Trigger the function by sending a Cloud Storage CloudEvent"
+# TODO: Make sure data.json is an actual Pub/Sub CloudEvent.
+
+echo "Trigger the function by sending a Pub/Sub CloudEvent"
 set -v
 curl -X POST \
     -H "content-type: application/json"  \

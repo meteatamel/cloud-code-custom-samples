@@ -12,6 +12,11 @@
             "path": "dotnet/cloud-functions/HelloGcs",
             "name": ".NET: Cloud Functions - HelloGcs",
             "description": "A Cloud Storage triggered .NET Cloud Functions template"
+        },
+        {
+            "path": "dotnet/cloud-functions/HelloPubSub",
+            "name": ".NET: Cloud Functions - HelloPubSub",
+            "description": "A Pub/Sub triggered .NET Cloud Functions template"
         }
     ]
 }

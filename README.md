@@ -10,3 +10,5 @@ these templates, you can follow this
   HTTP triggered .NET Cloud Functions template.
 * [.NET: Cloud Functions - HelloGcs](dotnet/cloud-functions/HelloGcs) - A
   Cloud Storage triggered .NET Cloud Functions template.
+* [.NET: Cloud Functions - HelloPubSub](dotnet/cloud-functions/HelloPubSub) - A
+  Pub/Sub triggered .NET Cloud Functions template.
