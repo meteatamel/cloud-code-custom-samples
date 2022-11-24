@@ -1,8 +1,17 @@
 # Custom templates for Cloud Code
 
 This repository contains some useful custom templates for Cloud Code for VS
-Code. To use these templates, you can follow this
-[doc](https://cloud.google.com/code/docs/vscode/create-app-from-custom-sample#creating_your_app_from_an_imported_sample) page.
+Code. To use these templates, you can:
+
+1. Click on `Cloud Code` in VS Code.
+1. Select `New Application` -> `Custom Application` -> `Import Sample from Repo`
+1. Point to this repo
+
+<img alt="Install templates in Cloud Code" src="install.gif" width="50%" height="50%">
+
+More details in this
+[doc](https://cloud.google.com/code/docs/vscode/create-app-from-custom-sample#creating_your_app_from_an_imported_sample)
+page.
 
 ## Templates
 
