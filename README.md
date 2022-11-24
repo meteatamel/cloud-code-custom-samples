@@ -7,7 +7,7 @@ Code. To use these templates, you can:
 1. Select `New Application` -> `Custom Application` -> `Import Sample from Repo`
 1. Point to this repo
 
-<img alt="Install templates in Cloud Code" src="install.gif" width="50%" height="50%">
+![Install templates](install.gif)
 
 More details in this
 [doc](https://cloud.google.com/code/docs/vscode/create-app-from-custom-sample#creating_your_app_from_an_imported_sample)
