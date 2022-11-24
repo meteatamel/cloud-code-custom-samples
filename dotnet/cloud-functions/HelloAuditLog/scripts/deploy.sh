@@ -4,9 +4,9 @@ source $(dirname $0)/config.sh
 
 echo "Deploy $SERVICE_NAME to $REGION"
 gcloud functions deploy $SERVICE_NAME \
-  --entry-point HelloPubSub.Function \
+  --entry-point HelloAuditLog.Function \
   --gen2 \
   --region $REGION \
   --runtime dotnet6 \
   --source .. \
-  --trigger-topic ${TOPIC_NAME}
+  --trigger-event-filters="type=google.cloud.audit.log.v1.written,serviceName=bigquery.googleapis.com,methodName=jobservice.jobcompleted"

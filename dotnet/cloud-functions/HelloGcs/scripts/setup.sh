@@ -16,5 +16,10 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
     --member serviceAccount:$SERVICE_ACCOUNT \
     --role roles/pubsub.publisher
 
+echo "Grant the default Compute Engine service account the eventarc.eventReceiver IAM role. This is needed for Eventarc's GCS trigger"
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member serviceAccount:$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
+  --role roles/eventarc.eventReceiver
+
 echo "Create a Google Cloud Storage bucket: $BUCKET_NAME"
 gsutil mb -l us-central1 gs://${BUCKET_NAME}

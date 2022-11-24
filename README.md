@@ -12,3 +12,5 @@ these templates, you can follow this
   Cloud Storage triggered .NET Cloud Functions template.
 * [.NET: Cloud Functions - HelloPubSub](dotnet/cloud-functions/HelloPubSub) - A
   Pub/Sub triggered .NET Cloud Functions template.
+* [.NET: Cloud Functions - HelloAuditLog](dotnet/cloud-functions/HelloAuditLog) - An
+  AuditLog triggered .NET Cloud Functions template.

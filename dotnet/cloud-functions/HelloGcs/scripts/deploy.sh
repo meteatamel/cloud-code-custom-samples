@@ -4,7 +4,6 @@ source $(dirname $0)/config.sh
 
 echo "Deploy $SERVICE_NAME to $REGION"
 gcloud functions deploy $SERVICE_NAME \
-  --allow-unauthenticated \
   --entry-point HelloGcs.Function \
   --gen2 \
   --region $REGION \
