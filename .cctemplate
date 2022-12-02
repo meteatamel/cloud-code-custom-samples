@@ -27,6 +27,6 @@
             "path": "dotnet/run/HelloHttp",
             "name": ".NET: Cloud Run - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Run template"
-        },
+        }
     ]
 }
