@@ -35,6 +35,8 @@ Cloud Run:
   Cloud Run template.
 * [.NET: Cloud Run - HelloGcs](dotnet/run/HelloGcs) - A Cloud Storage triggered
   .NET Cloud Run template.
+* [.NET: Cloud Run - HelloPubSub](dotnet/run/HelloPubSub) - A Pub/Sub triggered
+  .NET Cloud Run template.
 
 -------
 

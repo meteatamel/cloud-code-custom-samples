@@ -1,6 +1,6 @@
-# .NET: Cloud Run - HelloGcs
+# .NET: Cloud Run - HelloPubSub
 
- A Cloud Storage triggered .NET Cloud Run template.
+ A Pub/Sub triggered .NET Cloud Run template.
 
 ## Test locally
 
