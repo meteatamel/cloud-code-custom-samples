@@ -33,6 +33,8 @@ Cloud Run:
 
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
   Cloud Run template.
+* [.NET: Cloud Run - HelloGcs](dotnet/run/HelloGcs) - A Cloud Storage triggered
+  .NET Cloud Run template.
 
 -------
 

@@ -14,16 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
+export PROJECT_ID=$(gcloud config get-value project)
+export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
+export BUCKET_NAME="cloud-run-bucket-${PROJECT_ID}"
+export REGION=us-central1
+export SERVICE_NAME=hello-gcs-service
 
-echo "Triggering $SERVICE_NAME by uploading a file to $BUCKET_NAME"
-
-echo "Hello from Storage" > random.txt
-gsutil cp random.txt gs://${BUCKET_NAME}
-rm random.txt
-
-echo "Wait a little and read the logs"
-sleep 3
-gcloud functions logs read $SERVICE_NAME \
-  --gen2 \
-  --region $REGION --limit=100 --format "value(log)"

@@ -18,12 +18,11 @@ source $(dirname $0)/config.sh
 
 echo "Triggering $SERVICE_NAME by uploading a file to $BUCKET_NAME"
 
-echo "Hello from Storage" > random.txt
-gsutil cp random.txt gs://${BUCKET_NAME}
-rm random.txt
+echo "Hello from Storage" > random2.txt
+gsutil cp random2.txt gs://${BUCKET_NAME}
+rm random2.txt
 
 echo "Wait a little and read the logs"
 sleep 3
-gcloud functions logs read $SERVICE_NAME \
-  --gen2 \
-  --region $REGION --limit=100 --format "value(log)"
+gcloud alpha run services logs read $SERVICE_NAME \
+  --region $REGION --limit=100

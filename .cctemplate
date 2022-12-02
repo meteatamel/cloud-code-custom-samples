@@ -27,6 +27,11 @@
             "path": "dotnet/run/HelloHttp",
             "name": ".NET: Cloud Run - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Run template"
+        },
+        {
+            "path": "dotnet/run/HelloGcs",
+            "name": ".NET: Cloud Run - HelloGcs",
+            "description": "A Cloud Storage triggered .NET Cloud Run template"
         }
     ]
 }
