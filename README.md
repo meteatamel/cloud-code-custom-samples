@@ -37,6 +37,8 @@ Cloud Run:
   .NET Cloud Run template.
 * [.NET: Cloud Run - HelloPubSub](dotnet/run/HelloPubSub) - A Pub/Sub triggered
   .NET Cloud Run template.
+* [.NET: Cloud Run - HelloAuditLog](dotnet/run/HelloAuditLog) - An AuditLog
+  triggered .NET Cloud Run template.
 
 -------
 

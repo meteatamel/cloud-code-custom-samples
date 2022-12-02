@@ -37,6 +37,11 @@
             "path": "dotnet/run/HelloPubSub",
             "name": ".NET: Cloud Run - HelloPubSub",
             "description": "A Pub/Sub triggered .NET Cloud Run template"
+        },
+        {
+            "path": "dotnet/run/HelloAuditLog",
+            "name": ".NET: Cloud Run - HelloAuditLog",
+            "description": "An AuditLog triggered .NET Cloud Run template"
         }
     ]
 }
