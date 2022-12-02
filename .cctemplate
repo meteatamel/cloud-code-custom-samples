@@ -4,24 +4,29 @@
     },
     "templates": [
         {
-            "path": "dotnet/cloud-functions/HelloHttp",
+            "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/cloud-functions/HelloGcs",
+            "path": "dotnet/functions/HelloGcs",
             "name": ".NET: Cloud Functions - HelloGcs",
             "description": "A Cloud Storage triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/cloud-functions/HelloPubSub",
+            "path": "dotnet/functions/HelloPubSub",
             "name": ".NET: Cloud Functions - HelloPubSub",
             "description": "A Pub/Sub triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/cloud-functions/HelloAuditLog",
+            "path": "dotnet/functions/HelloAuditLog",
             "name": ".NET: Cloud Functions - HelloAuditLog",
             "description": "An AuditLog triggered .NET Cloud Functions template"
-        }
+        },
+        {
+            "path": "dotnet/run/HelloHttp",
+            "name": ".NET: Cloud Run - HelloHttp",
+            "description": "An HTTP triggered .NET Cloud Run template"
+        },
     ]
 }
