@@ -1,24 +1,22 @@
 # Custom templates for Cloud Code
 
-This repository contains some useful custom templates for Cloud Code for VS
-Code. Each template includes scripts to test locally and also to deploy and test
-in the cloud.
+This repository contains some custom templates for Cloud Code for VS Code. Each
+template includes starter code and scripts to test locally and to deploy/test in
+the cloud.
 
-To use these templates, you can:
+To use these templates as starter projects:
 
 1. Click on `Cloud Code` in VS Code.
 1. Select `New Application` -> `Custom Application` -> `Import Sample from Repo`
-1. Point to this repo
+1. Point to this repo.
+1. Choose a template as a starter project and follow `README.md` instructions of
+   the template.
 
 ![Install templates](install.gif)
 
-More details in this
-[doc](https://cloud.google.com/code/docs/vscode/create-app-from-custom-sample#creating_your_app_from_an_imported_sample)
-page.
-
 ## Templates
 
-Cloud Functions:
+Cloud Functions
 
 * [.NET: Cloud Functions - HelloHttp](dotnet/functions/HelloHttp) - An
   HTTP triggered .NET Cloud Functions template.
@@ -29,7 +27,7 @@ Cloud Functions:
 * [.NET: Cloud Functions - HelloAuditLog](dotnet/functions/HelloAuditLog) - An
   AuditLog triggered .NET Cloud Functions template.
 
-Cloud Run:
+Cloud Run
 
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
   Cloud Run template.
