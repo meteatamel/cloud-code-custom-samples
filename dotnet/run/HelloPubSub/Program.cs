@@ -31,9 +31,9 @@ app.MapPost("/", async context =>
     var data = cloudEvent.Data as MessagePublishedData;
 
     Console.WriteLine("Message published information:");
-    Console.WriteLine($"  Message: {data.Message}");
-    Console.WriteLine($"    TextData: {data.Message?.TextData}");
-    Console.WriteLine($"  Subscription: {data.Subscription}");
+    Console.WriteLine($"  Message: {data?.Message}");
+    Console.WriteLine($"    TextData: {data?.Message?.TextData}");
+    Console.WriteLine($"  Subscription: {data?.Subscription}");
     Console.WriteLine("CloudEvent information:");
     Console.WriteLine($"  ID: {cloudEvent.Id}");
     Console.WriteLine($"  Source: {cloudEvent.Source}");

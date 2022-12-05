@@ -31,10 +31,10 @@ app.MapPost("/", async context =>
     var data = cloudEvent.Data as StorageObjectData;
 
     Console.WriteLine("Storage object information:");
-    Console.WriteLine($"  Name: {data.Name}");
-    Console.WriteLine($"  Bucket: {data.Bucket}");
-    Console.WriteLine($"  Size: {data.Size}");
-    Console.WriteLine($"  Content type: {data.ContentType}");
+    Console.WriteLine($"  Name: {data?.Name}");
+    Console.WriteLine($"  Bucket: {data?.Bucket}");
+    Console.WriteLine($"  Size: {data?.Size}");
+    Console.WriteLine($"  Content type: {data?.ContentType}");
     Console.WriteLine("CloudEvent information:");
     Console.WriteLine($"  ID: {cloudEvent.Id}");
     Console.WriteLine($"  Source: {cloudEvent.Source}");

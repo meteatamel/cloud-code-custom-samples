@@ -31,10 +31,10 @@ app.MapPost("/", async context =>
     var data = cloudEvent.Data as LogEntryData;
 
     Console.WriteLine("LogEntry information:");
-    Console.WriteLine($"  ProtoPayload: {data.ProtoPayload}");
-    Console.WriteLine($"    ServiceName: {data.ProtoPayload.ServiceName}");
-    Console.WriteLine($"    MethodName: {data.ProtoPayload.MethodName}");
-    Console.WriteLine($"    ResourceName: {data.ProtoPayload.ResourceName}");
+    Console.WriteLine($"  ProtoPayload: {data?.ProtoPayload}");
+    Console.WriteLine($"    ServiceName: {data?.ProtoPayload.ServiceName}");
+    Console.WriteLine($"    MethodName: {data?.ProtoPayload.MethodName}");
+    Console.WriteLine($"    ResourceName: {data?.ProtoPayload.ResourceName}");
     Console.WriteLine("CloudEvent information:");
     Console.WriteLine($"  ID: {cloudEvent.Id}");
     Console.WriteLine($"  Source: {cloudEvent.Source}");
