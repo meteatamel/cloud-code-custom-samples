@@ -16,7 +16,9 @@ To use these templates as starter projects:
 
 ## Templates
 
-Cloud Functions
+### Cloud Functions
+
+.NET:
 
 * [.NET: Cloud Functions - HelloHttp](dotnet/functions/HelloHttp) - An
   HTTP triggered .NET Cloud Functions template.
@@ -27,7 +29,12 @@ Cloud Functions
 * [.NET: Cloud Functions - HelloAuditLog](dotnet/functions/HelloAuditLog) - An
   AuditLog triggered .NET Cloud Functions template.
 
-Cloud Run
+Node.js:
+
+* [Node.js: Cloud Functions - HelloHttp](nodejs/functions/hello-http) - An
+  HTTP triggered Node.js Cloud Functions template.
+
+### Cloud Run
 
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
   Cloud Run template.

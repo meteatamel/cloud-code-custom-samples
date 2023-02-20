@@ -21,6 +21,6 @@ gcloud functions deploy $SERVICE_NAME \
   --entry-point HelloAuditLog.Function \
   --gen2 \
   --region $REGION \
-  --runtime dotnet6 \
+  --runtime $RUNTIME \
   --source .. \
   --trigger-event-filters="type=google.cloud.audit.log.v1.written,serviceName=bigquery.googleapis.com,methodName=jobservice.jobcompleted"

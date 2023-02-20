@@ -18,5 +18,6 @@ export PROJECT_ID=$(gcloud config get-value project)
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 export BUCKET_NAME="cloud-run-bucket-${PROJECT_ID}"
 export REGION=us-central1
-export SERVICE_NAME=hello-gcs-service
+export RUNTIME=dotnet6
+export SERVICE_NAME=hello-gcs-service-$RUNTIME
 

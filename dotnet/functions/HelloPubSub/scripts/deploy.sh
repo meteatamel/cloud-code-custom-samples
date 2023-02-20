@@ -21,6 +21,6 @@ gcloud functions deploy $SERVICE_NAME \
   --entry-point HelloPubSub.Function \
   --gen2 \
   --region $REGION \
-  --runtime dotnet6 \
+  --runtime $RUNTIME \
   --source .. \
   --trigger-topic ${TOPIC_NAME}

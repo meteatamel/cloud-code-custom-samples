@@ -16,4 +16,5 @@
 
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=us-central1
-export SERVICE_NAME=hello-http-function
+export RUNTIME=dotnet6
+export SERVICE_NAME=hello-http-function-$RUNTIME

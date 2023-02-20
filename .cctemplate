@@ -42,6 +42,11 @@
             "path": "dotnet/run/HelloAuditLog",
             "name": ".NET: Cloud Run - HelloAuditLog",
             "description": "An AuditLog triggered .NET Cloud Run template"
-        }
+        },
+        {
+            "path": "nodejs/functions/hello-http",
+            "name": "Node.js: Cloud Functions - HelloHttp",
+            "description": "An HTTP triggered Node.js Cloud Functions template"
+        },
     ]
 }

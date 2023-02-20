@@ -16,12 +16,7 @@
 
 source $(dirname $0)/config.sh
 
-echo "Deploy $SERVICE_NAME to $REGION"
-gcloud functions deploy $SERVICE_NAME \
-  --entry-point HelloGcs.Function \
+echo "Triggering $SERVICE_NAME with HTTP"
+gcloud functions call $SERVICE_NAME \
   --gen2 \
-  --region $REGION \
-  --runtime $RUNTIME \
-  --source .. \
-  --trigger-event google.storage.object.finalize \
-  --trigger-resource $BUCKET_NAME
+  --region $REGION

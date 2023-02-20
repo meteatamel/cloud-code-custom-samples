@@ -14,14 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
-
-echo "Deploy $SERVICE_NAME to $REGION"
-gcloud functions deploy $SERVICE_NAME \
-  --entry-point HelloGcs.Function \
-  --gen2 \
-  --region $REGION \
-  --runtime $RUNTIME \
-  --source .. \
-  --trigger-event google.storage.object.finalize \
-  --trigger-resource $BUCKET_NAME
+export PROJECT_ID=$(gcloud config get-value project)
+export REGION=us-central1
+export RUNTIME=nodejs18
+export SERVICE_NAME=hello-http-function-$RUNTIME
