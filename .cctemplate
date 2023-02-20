@@ -48,5 +48,10 @@
             "name": "Node.js: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered Node.js Cloud Functions template"
         },
+        {
+            "path": "nodejs/functions/hello-gcs",
+            "name": "Node.js: Cloud Functions - HelloGcs",
+            "description": "A Cloud Storage triggered Node.js Cloud Functions template"
+        }
     ]
 }

@@ -33,6 +33,8 @@ Node.js:
 
 * [Node.js: Cloud Functions - HelloHttp](nodejs/functions/hello-http) - An
   HTTP triggered Node.js Cloud Functions template.
+* [Node.js: Cloud Functions - HelloGcs](nodejs/functions/hello-gcs) - A
+  Cloud Storage triggered Node.js Cloud Functions template.
 
 ### Cloud Run
 

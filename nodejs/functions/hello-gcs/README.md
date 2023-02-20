@@ -1,6 +1,6 @@
-# Node.js: Cloud Functions - HelloHttp
+# Node.js: Cloud Functions - HelloGcs
 
- An HTTP triggered Node.js Cloud Functions template.
+A Cloud Storage triggered Node.js Cloud Functions template.
 
 ## Test locally
 
@@ -10,10 +10,7 @@ Run the function:
 npm start
 
 ...
-Serving function...
-Function: helloHttp
-Signature type: http
-URL: http://localhost:8080/
+2022-11-22T10:48:04.589Z [Microsoft.Hosting.Lifetime] [info] Now listening on: http://127.0.0.1:8080
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
@@ -22,12 +19,17 @@ test the function locally:
 ```sh
 ./test_local.sh
 
-Hello World!
+< HTTP/1.1 204 No Content
+< Date: Mon, 20 Feb 2023 14:45:00 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
 ```
 
 ## Before deploying to Google Cloud
 
-Run [setup.sh](scripts/setup.sh) to enable required services:
+Run [setup.sh](scripts/setup.sh) to enable required services, grant the
+`pubsub.publisher` role to the Cloud Storage service account and create a Google
+Cloud Storage (GCS) bucket:
 
 ```sh
 ./setup.sh
@@ -42,8 +44,6 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 ```
 
 ## Test in Google Cloud
-
-You can test with `Invoke function via HTTP` in Cloud Code or with `gcloud`.
 
 Run [test_cloud.sh](scripts/test_cloud.sh) to test the function in Google Cloud:
 
