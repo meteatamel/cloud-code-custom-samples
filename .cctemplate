@@ -57,6 +57,11 @@
             "path": "nodejs/functions/hello-pubsub",
             "name": "Node.js: Cloud Functions - HelloPubSub",
             "description": "A Pub/Sub triggered Node.js Cloud Functions template"
+        },
+        {
+            "path": "nodejs/functions/hello-auditlog",
+            "name": "Node.js: Cloud Functions - HelloAuditLog",
+            "description": "An AuditLog triggered Node.js Cloud Functions template"
         }
     ]
 }

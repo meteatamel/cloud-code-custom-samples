@@ -37,6 +37,8 @@ Node.js:
   Cloud Storage triggered Node.js Cloud Functions template.
 * [Node.js: Cloud Functions - HelloPubSub](nodejs/functions/hello-pubsub) - A
   Pub/Sub triggered Node.js Cloud Functions template.
+* [Node.js: Cloud Functions - HelloAuditLog](nodejs/functions/hello-auditLog) - An
+  AuditLog triggered Node.js Cloud Functions template.
 
 ### Cloud Run
 
