@@ -1,20 +1,39 @@
 # Custom templates for Cloud Code
 
-This repository contains some custom templates for Cloud Code for VS Code. Each
-template includes starter code for Cloud Functions and Cloud Run services that
-use the recommended libraries ([CloudEvents SDK](https://cloudevents.io/) and
-[Google CloudEvents
-libraries](https://github.com/googleapis/google-cloudevents)) for the language
-of the template. It also includes `gcloud` based scripts to test services
+## What are these templates?
+
+This repository contains some starter Cloud Functions and Cloud Run templates
+for Cloud Code for VS Code for different languages. Each template includes
+minimal starter code for HTTP or CloudEvent triggered Cloud Functions or Cloud
+Run services that use the recommended libraries ([CloudEvents
+SDK](https://cloudevents.io/) and [Google CloudEvents
+libraries](https://github.com/googleapis/google-cloudevents)) for each language.
+They also includes lightweight `gcloud` based scripts to quickly test services
 locally, deploy to the cloud, and test in the cloud.
+
+## Why these templates?
+
+Cloud Code comes with some default Cloud Run and Cloud Functions templates
+(hosted in
+[cloud-code-samples](https://github.com/GoogleCloudPlatform/cloud-code-samples)
+repo) but they're limited:
+
+* Only four languages are supported (Node.js, Python, Go, and Java) in Cloud
+  Functions templates and deployment. I’ve especially missed the NET support.
+* Templates for Cloud Run and Cloud Functions are only for HTTP triggered
+  services. No templates for event triggered services.
+* Testing only works against deployed HTTP triggered services. No testing
+  support for locally running services or event triggered services.
+
+## How do I use these templates?
 
 To use these templates as starter projects:
 
 1. Click on `Cloud Code` in VS Code.
 1. Select `New Application` -> `Custom Application` -> `Import Sample from Repo`
 1. Point to this repository.
-1. Choose a template as a starter project and follow `README.md` instructions of
-   the template.
+1. Choose a template as a starter project and follow the instructions in the
+   `README.md`of the template.
 
 ![Install templates](install.gif)
 
