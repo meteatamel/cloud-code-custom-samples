@@ -62,6 +62,11 @@
             "path": "nodejs/functions/hello-auditlog",
             "name": "Node.js: Cloud Functions - HelloAuditLog",
             "description": "An AuditLog triggered Node.js Cloud Functions template"
+        },
+        {
+            "path": "nodejs/run/hello-http",
+            "name": "Node.js: Cloud Run - HelloHttp",
+            "description": "An HTTP triggered Node.js Cloud Run template"
         }
     ]
 }

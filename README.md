@@ -46,6 +46,8 @@ Node.js:
 
 ### Cloud Run
 
+.NET:
+
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
   Cloud Run template.
 * [.NET: Cloud Run - HelloGcs](dotnet/run/HelloGcs) - A Cloud Storage triggered
@@ -54,6 +56,11 @@ Node.js:
   .NET Cloud Run template.
 * [.NET: Cloud Run - HelloAuditLog](dotnet/run/HelloAuditLog) - An AuditLog
   triggered .NET Cloud Run template.
+
+Node.js:
+
+* [Node.js: Cloud Run - HelloHttp](nodejs/run/hello-http) - An HTTP triggered Node.js
+  Cloud Run template.
 
 -------
 

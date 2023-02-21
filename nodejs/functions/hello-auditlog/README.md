@@ -37,7 +37,7 @@ test the function locally:
 < Keep-Alive: timeout=5
 ```
 
-You should see the function log the following:
+You should see the following in the function logs:
 
 ```sh
 Event ID: projects/test-project/logs/cloudaudit.googleapis.com%2Fdata_access1234567123456789
