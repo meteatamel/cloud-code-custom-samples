@@ -27,6 +27,9 @@ repo) but they're limited:
 
 ## How do I use these templates?
 
+You can use these templates in standalone Cloud Code for VS Code or the Cloud
+Code in the editor of Cloud Shell in the browser.
+
 To use these templates as starter projects:
 
 1. Click on `Cloud Code` in VS Code.
