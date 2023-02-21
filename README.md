@@ -1,14 +1,18 @@
 # Custom templates for Cloud Code
 
 This repository contains some custom templates for Cloud Code for VS Code. Each
-template includes starter code and scripts to test locally and to deploy/test in
-the cloud.
+template includes starter code for Cloud Functions and Cloud Run services that
+use the recommended libraries ([CloudEvents SDK](https://cloudevents.io/) and
+[Google CloudEvents
+libraries](https://github.com/googleapis/google-cloudevents)) for the language
+of the template. It also includes `gcloud` based scripts to test services
+locally, deploy to the cloud, and test in the cloud.
 
 To use these templates as starter projects:
 
 1. Click on `Cloud Code` in VS Code.
 1. Select `New Application` -> `Custom Application` -> `Import Sample from Repo`
-1. Point to this repo.
+1. Point to this repository.
 1. Choose a template as a starter project and follow `README.md` instructions of
    the template.
 

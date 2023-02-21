@@ -15,6 +15,7 @@
 'use strict';
 
 const functions = require('@google-cloud/functions-framework');
+const {toMessagePublishedData} = require('@google/events/cloud/pubsub/v1/MessagePublishedData');
 
 // Register a CloudEvent callback with the Functions Framework that will
 // be executed when the Pub/Sub trigger topic receives a message.
@@ -22,12 +23,10 @@ functions.cloudEvent('helloPubSub', cloudEvent => {
   console.log(`Event ID: ${cloudEvent.id}`);
   console.log(`Event Type: ${cloudEvent.type}`);
 
-  // The Pub/Sub message is passed as the CloudEvent's data payload.
-  console.log(`  Message: ${cloudEvent.data.message}`);
+  const messagePublishedData = toMessagePublishedData(cloudEvent.data);
 
-  const base64Data = cloudEvent.data.message.data;
+  const base64Data = messagePublishedData.message.data;
   const textData = base64Data ? Buffer.from(base64Data, 'base64').toString() : '';
-  console.log(`    textData: ${textData}`);
-  console.log(`  Subscription: ${cloudEvent.data.subscription}`);
+  console.log(`TextData: ${textData}`);
+  console.log(`Subscription: ${cloudEvent.data.subscription}`);
  });
- 

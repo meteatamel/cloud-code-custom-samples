@@ -5,16 +5,17 @@
     "license": "Apache-2.0",
     "author": "Google Inc.",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/meteatamel/cloud-code-custom-templates"
+        "type": "git",
+        "url": "https://github.com/meteatamel/cloud-code-custom-templates"
     },
     "engines": {
-      "node": ">=12.0.0"
+        "node": ">=12.0.0"
     },
     "dependencies": {
-      "@google-cloud/functions-framework": "^3.1.3"
+        "@google-cloud/functions-framework": "^3.1.3",
+        "@google/events": "^5.4.0"
     },
     "scripts": {
-      "start": "functions-framework --target=helloPubSub"
+        "start": "functions-framework --target=helloPubSub"
     }
-  }
+}

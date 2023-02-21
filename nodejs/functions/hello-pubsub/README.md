@@ -37,14 +37,13 @@ test the function locally:
 < Keep-Alive: timeout=5
 ```
 
-You should see the function log the following:
+You should see the following in the function logs:
 
 ```sh
 Event ID: 6308619096677818
 Event Type: google.cloud.pubsub.topic.v1.messagePublished
-  Message: [object Object]
-    textData: Hello World
-  Subscription: projects/MY-PROJECT/subscriptions/MY-SUB
+TextData: Hello World
+Subscription: projects/MY-PROJECT/subscriptions/MY-SUB
 ```
 
 ## Before deploying to Google Cloud

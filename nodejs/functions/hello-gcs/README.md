@@ -31,6 +31,18 @@ test the function locally:
 < Keep-Alive: timeout=5
 ```
 
+You should see the following in the function logs:
+
+```sh
+Event ID: 123451234512345
+Event Type: google.cloud.storage.object.v1.finalized
+Bucket: MY_BUCKET
+File: MY_FILE.txt
+Metageneration: 1
+Created: 2020-04-23T07:38:57.230Z
+Updated: 2020-04-23T07:38:57.230Z
+```
+
 ## Before deploying to Google Cloud
 
 Run [setup.sh](scripts/setup.sh) to enable required services, grant the

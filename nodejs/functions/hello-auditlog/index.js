@@ -15,6 +15,7 @@
 'use strict';
 
 const functions = require('@google-cloud/functions-framework');
+const {toLogEntryData} = require('@google/events/cloud/audit/v1/LogEntryData');
 
  // Register a CloudEvent callback with the Functions Framework that will
 // be triggered by an Eventarc Cloud Audit Logging trigger.
@@ -24,15 +25,16 @@ functions.cloudEvent('helloAuditLog', cloudEvent => {
   console.log('Event type:', cloudEvent.type);
   console.log('Subject:', cloudEvent.subject);
 
+  const logEntryData = toLogEntryData(cloudEvent.data);
+
   // Print out details from the `protoPayload`
   // This field encapsulates a Cloud Audit Logging entry
   // See https://cloud.google.com/logging/docs/audit#audit_log_entry_structure
-  const payload = cloudEvent.data && cloudEvent.data.protoPayload;
+  const payload = logEntryData.protoPayload;
   if (payload) {
-    console.log(`ProtoPayload: ${payload}`);
-    console.log(`    ServiceName: ${payload.serviceName}`);
-    console.log(`    MethodName: ${payload.methodName}`);
-    console.log(`    ResourceName: ${payload.resourceName}`);
+    console.log(`ServiceName: ${payload.serviceName}`);
+    console.log(`MethodName: ${payload.methodName}`);
+    console.log(`ResourceName: ${payload.resourceName}`);
   }
  });
  
