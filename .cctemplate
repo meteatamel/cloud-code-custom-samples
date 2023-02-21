@@ -52,6 +52,11 @@
             "path": "nodejs/functions/hello-gcs",
             "name": "Node.js: Cloud Functions - HelloGcs",
             "description": "A Cloud Storage triggered Node.js Cloud Functions template"
+        },
+        {
+            "path": "nodejs/functions/hello-pubsub",
+            "name": "Node.js: Cloud Functions - HelloPubSub",
+            "description": "A Pub/Sub triggered Node.js Cloud Functions template"
         }
     ]
 }

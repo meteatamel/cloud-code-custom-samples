@@ -4,6 +4,12 @@
 
 ## Test locally
 
+Install dependencies:
+
+```sh
+npm install
+```
+
 Run the function:
 
 ```sh

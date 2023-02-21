@@ -1,6 +1,6 @@
-# Node.js: Cloud Functions - HelloGcs
+# Node.js: Cloud Functions - HelloPubSub
 
-A Cloud Storage triggered Node.js Cloud Functions template.
+A Pub/Sub triggered Node.js Cloud Functions template.
 
 ## Test locally
 
@@ -16,7 +16,13 @@ Run the function:
 npm start
 
 ...
-2022-11-22T10:48:04.589Z [Microsoft.Hosting.Lifetime] [info] Now listening on: http://127.0.0.1:8080
+> hello-pubsub@0.0.1 start
+> functions-framework --target=helloPubSub
+
+Serving function...
+Function: helloPubSub
+Signature type: cloudevent
+URL: http://localhost:8080/
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
@@ -26,9 +32,19 @@ test the function locally:
 ./test_local.sh
 
 < HTTP/1.1 204 No Content
-< Date: Mon, 20 Feb 2023 14:45:00 GMT
+< Date: Tue, 21 Feb 2023 08:23:04 GMT
 < Connection: keep-alive
 < Keep-Alive: timeout=5
+```
+
+You should see the function log the following:
+
+```sh
+Event ID: 6308619096677818
+Event Type: google.cloud.pubsub.topic.v1.messagePublished
+  Message: [object Object]
+    textData: Hello World
+  Subscription: projects/MY-PROJECT/subscriptions/MY-SUB
 ```
 
 ## Before deploying to Google Cloud

@@ -35,6 +35,8 @@ Node.js:
   HTTP triggered Node.js Cloud Functions template.
 * [Node.js: Cloud Functions - HelloGcs](nodejs/functions/hello-gcs) - A
   Cloud Storage triggered Node.js Cloud Functions template.
+* [Node.js: Cloud Functions - HelloPubSub](nodejs/functions/hello-pubsub) - A
+  Pub/Sub triggered Node.js Cloud Functions template.
 
 ### Cloud Run
 
