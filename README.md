@@ -63,8 +63,10 @@ Node.js:
   Cloud Run template.
 * [Node.js: Cloud Run - HelloGcs](nodejs/run/hello-gcs) - A Cloud Storage triggered
   Node.js Cloud Run template.
-* [.NET: Cloud Run - HelloPubSub](nodejs/run/hello-pubsub) - A Pub/Sub triggered
+* [Node.js: Cloud Run - HelloPubSub](nodejs/run/hello-pubsub) - A Pub/Sub triggered
   Node.js Cloud Run template.
+* [Node.js: Cloud Run - HelloAuditLog](nodejs/run/hello-auditLog) - An AuditLog
+  triggered Node.js Cloud Run template.
 
 -------
 

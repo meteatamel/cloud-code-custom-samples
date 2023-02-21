@@ -16,7 +16,7 @@
 
 const express = require('express');
 const { HTTP } = require("cloudevents");
-const {toStorageObjectData} = require('@google/events/cloud/storage/v1/StorageObjectData');
+const {toLogEntryData} = require('@google/events/cloud/audit/v1/LogEntryData');
 
 const app = express();
 
@@ -29,14 +29,19 @@ app.post('/', (req, res) => {
 
   console.log(`Event ID: ${cloudEvent.id}`);
   console.log(`Event Type: ${cloudEvent.type}`);
+  console.log('Subject:', cloudEvent.subject);
 
-  const storageObjectData = toStorageObjectData(cloudEvent.data);
+  const logEntryData = toLogEntryData(cloudEvent.data);
 
-  console.log(`Bucket: ${storageObjectData.bucket}`);
-  console.log(`File: ${storageObjectData.name}`);
-  console.log(`Metageneration: ${storageObjectData.metageneration}`);
-  console.log(`Created: ${storageObjectData.timeCreated}`);
-  console.log(`Updated: ${storageObjectData.updated}`);
+  // Print out details from the `protoPayload`
+  // This field encapsulates a Cloud Audit Logging entry
+  // See https://cloud.google.com/logging/docs/audit#audit_log_entry_structure
+  const payload = logEntryData.protoPayload;
+  if (payload) {
+    console.log(`ServiceName: ${payload.serviceName}`);
+    console.log(`MethodName: ${payload.methodName}`);
+    console.log(`ResourceName: ${payload.resourceName}`);
+  }
 
   res.status(204).send();
 });

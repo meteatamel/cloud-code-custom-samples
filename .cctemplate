@@ -77,6 +77,11 @@
             "path": "nodejs/run/hello-pubsub",
             "name": "Node.js: Cloud Run - HelloPubSub",
             "description": "A Pub/Sub triggered Node.js Cloud Run template"
+        },
+        {
+            "path": "nodejs/run/hello-auditLog",
+            "name": "Node.js: Cloud Run - HelloAuditLog",
+            "description": "An AuditLog triggered Node.js Cloud Run template"
         }
     ]
 }
