@@ -1,0 +1,22 @@
+{
+    "name": "hello-gcs",
+    "version": "0.0.1",
+    "private": true,
+    "license": "Apache-2.0",
+    "author": "Google Inc.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/meteatamel/cloud-code-custom-templates"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "dependencies": {
+        "@google/events": "^5.4.0",
+        "cloudevents": "^6.0.4",
+        "express": "^4.18.2"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}

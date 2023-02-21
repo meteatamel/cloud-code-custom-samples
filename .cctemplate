@@ -67,6 +67,11 @@
             "path": "nodejs/run/hello-http",
             "name": "Node.js: Cloud Run - HelloHttp",
             "description": "An HTTP triggered Node.js Cloud Run template"
+        },
+        {
+            "path": "nodejs/run/hello-gcs",
+            "name": "Node.js: Cloud Run - HelloGcs",
+            "description": "A Cloud Storage triggered Node.js Cloud Run template"
         }
     ]
 }
