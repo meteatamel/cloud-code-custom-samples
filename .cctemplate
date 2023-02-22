@@ -4,6 +4,11 @@
     },
     "templates": [
         {
+            "path": "java/functions/hello-http",
+            "name": "Java: Cloud Functions - HelloHttp",
+            "description": "An HTTP triggered Java Cloud Functions template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"

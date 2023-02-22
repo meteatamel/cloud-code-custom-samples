@@ -44,6 +44,11 @@ To use these templates as starter projects:
 
 ### Cloud Functions
 
+Java:
+
+* [Java: Cloud Functions - HelloHttp](java/functions/hello-http) - An
+  HTTP triggered Java Cloud Functions template.
+
 .NET:
 
 * [.NET: Cloud Functions - HelloHttp](dotnet/functions/HelloHttp) - An
