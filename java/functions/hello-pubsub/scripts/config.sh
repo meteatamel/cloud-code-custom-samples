@@ -14,14 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
-
-echo "Deploy $SERVICE_NAME to $REGION"
-gcloud functions deploy $SERVICE_NAME \
-  --allow-unauthenticated \
-  --entry-point functions.HelloHttp \
-  --gen2 \
-  --region $REGION \
-  --runtime $RUNTIME \
-  --source .. \
-  --trigger-http
+export PROJECT_ID=$(gcloud config get-value project)
+export TOPIC_NAME="cloud-functions-topic"
+export REGION=us-central1
+export RUNTIME=java17
+export SERVICE_NAME=hello-pubsub-function-$RUNTIME

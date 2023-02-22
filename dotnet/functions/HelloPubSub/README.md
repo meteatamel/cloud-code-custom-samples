@@ -23,6 +23,24 @@ test the function locally:
 < Content-Length: 0
 ```
 
+You should see the following in service logs:
+
+```sh
+Message published information:
+  Message: { "data": "SGVsbG8gV29ybGQ=", "attributes": { "attr1": "attr1-value" } }
+    TextData: Hello World
+  Subscription: projects/MY-PROJECT/subscriptions/MY-SUB
+CloudEvent information:
+  ID: 6308619096677818
+  Source: //pubsub.googleapis.com/projects/MY-PROJECT/topics/MY-TOPIC
+  Type: google.cloud.pubsub.topic.v1.messagePublished
+  Subject: 
+  DataSchema: 
+  DataContentType: application/json
+  Time: 2020-01-02T12:34:56.789Z
+  SpecVersion: CloudNative.CloudEvents.CloudEventsSpecVersion
+```
+
 ## Before deploying to Google Cloud
 
 Run [setup.sh](scripts/setup.sh) to enable required services, and create a

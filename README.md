@@ -48,6 +48,8 @@ Java:
 
 * [Java: Cloud Functions - HelloHttp](java/functions/hello-http) - An
   HTTP triggered Java Cloud Functions template.
+* [Java: Cloud Functions - HelloPubSub](dotnet/functions/HelloPubSub) - A
+  Pub/Sub triggered Java Cloud Functions template.
 
 .NET:
 
