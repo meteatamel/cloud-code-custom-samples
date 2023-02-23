@@ -16,11 +16,9 @@
 package functions;
 
 import com.google.cloud.functions.CloudEventsFunction;
-import com.google.events.cloud.pubsub.v1.MessagePublishedData;
-import com.google.events.cloud.pubsub.v1.PubsubMessage;
+import com.google.events.cloud.storage.v1.StorageObjectData;
 import com.google.gson.Gson;
 import io.cloudevents.CloudEvent;
-import java.util.Base64;
 import java.util.logging.Logger;
 
 public class Function implements CloudEventsFunction {
@@ -37,16 +35,13 @@ public class Function implements CloudEventsFunction {
 
     String cloudEventData = new String(cloudEvent.getData().toBytes());
     Gson gson = new Gson();
-    MessagePublishedData data = gson.fromJson(cloudEventData, MessagePublishedData.class);
+    StorageObjectData data = gson.fromJson(cloudEventData, StorageObjectData.class);
 
-    PubsubMessage message = data.getMessage();
-    String encodedData = message.getData().toStringUtf8();
-    String textData = new String(Base64.getDecoder().decode(encodedData));
-
-    // "Message published data
-    logger.info("Message: " + data.getMessage());
-    logger.info("TextData: " + textData);
-    logger.info("Subscription: " + data.getSubscription());
-
+    // TODO: Check why StorageObjectData is empty.
+    // Storage object data
+    logger.info("Name: " + data.getName());
+    logger.info("Bucket: " + data.getBucket());
+    logger.info("Size: " + data.getSize());
+    logger.info("Content type: " + data.getContentType());
   }
 }

@@ -9,6 +9,11 @@
             "description": "An HTTP triggered Java Cloud Functions template"
         },
         {
+            "path": "java/functions/hello-gcs",
+            "name": "Java: Cloud Functions - HelloGcs",
+            "description": "A Cloud Storage triggered Java Cloud Functions template"
+        },
+        {
             "path": "java/functions/hello-pubsub",
             "name": "Java: Cloud Functions - HelloPubSub",
             "description": "A Pub/Sub triggered Java Cloud Functions template"
