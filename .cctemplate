@@ -19,6 +19,11 @@
             "description": "A Pub/Sub triggered Java Cloud Functions template"
         },
         {
+            "path": "java/functions/hello-auditlog",
+            "name": "Java: Cloud Functions - HelloAuditLog",
+            "description": "An AuditLog triggered Java Cloud Functions template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"

@@ -50,8 +50,10 @@ Java:
   HTTP triggered Java Cloud Functions template.
 * [Java: Cloud Functions - HelloGcs](java/functions/hello-gcs) - A
   Cloud Storage triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloPubSub](dotnet/functions/HelloPubSub) - A
+* [Java: Cloud Functions - HelloPubSub](java/functions/hello-pubsub) - A
   Pub/Sub triggered Java Cloud Functions template.
+* [Java: Cloud Functions - HelloAuditLog](java/functions/hello-auditlog) - An
+  AuditLog triggered Java Cloud Functions template.
 
 .NET:
 
