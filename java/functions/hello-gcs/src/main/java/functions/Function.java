@@ -17,7 +17,8 @@ package functions;
 
 import com.google.cloud.functions.CloudEventsFunction;
 import com.google.events.cloud.storage.v1.StorageObjectData;
-import com.google.gson.Gson;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.util.JsonFormat;
 import io.cloudevents.CloudEvent;
 import java.util.logging.Logger;
 
@@ -26,18 +27,18 @@ public class Function implements CloudEventsFunction {
   private static final Logger logger = Logger.getLogger(Function.class.getName());
 
   @Override
-  public void accept(CloudEvent cloudEvent) {
+  public void accept(CloudEvent cloudEvent) throws InvalidProtocolBufferException {
 
     // CloudEvent information
     logger.info("Id: " + cloudEvent.getId());
     logger.info("Source: " + cloudEvent.getSource());
     logger.info("Type: " + cloudEvent.getType());
 
-    String cloudEventData = new String(cloudEvent.getData().toBytes());
-    Gson gson = new Gson();
-    StorageObjectData data = gson.fromJson(cloudEventData, StorageObjectData.class);
+    String json = new String(cloudEvent.getData().toBytes());
+    StorageObjectData.Builder builder = StorageObjectData.newBuilder();
+    JsonFormat.parser().merge(json, builder);
+    StorageObjectData data = builder.build();
 
-    // TODO: Check why StorageObjectData is empty.
     // Storage object data
     logger.info("Name: " + data.getName());
     logger.info("Bucket: " + data.getBucket());

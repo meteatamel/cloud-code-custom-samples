@@ -17,10 +17,10 @@ package functions;
 
 import com.google.cloud.functions.CloudEventsFunction;
 import com.google.events.cloud.pubsub.v1.MessagePublishedData;
-import com.google.events.cloud.pubsub.v1.PubsubMessage;
-import com.google.gson.Gson;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.util.JsonFormat;
+
 import io.cloudevents.CloudEvent;
-import java.util.Base64;
 import java.util.logging.Logger;
 
 public class Function implements CloudEventsFunction {
@@ -28,24 +28,21 @@ public class Function implements CloudEventsFunction {
   private static final Logger logger = Logger.getLogger(Function.class.getName());
 
   @Override
-  public void accept(CloudEvent cloudEvent) {
+  public void accept(CloudEvent cloudEvent) throws InvalidProtocolBufferException {
 
     // CloudEvent information
     logger.info("Id: " + cloudEvent.getId());
     logger.info("Source: " + cloudEvent.getSource());
     logger.info("Type: " + cloudEvent.getType());
 
-    String cloudEventData = new String(cloudEvent.getData().toBytes());
-    Gson gson = new Gson();
-    MessagePublishedData data = gson.fromJson(cloudEventData, MessagePublishedData.class);
-
-    PubsubMessage message = data.getMessage();
-    String encodedData = message.getData().toStringUtf8();
-    String textData = new String(Base64.getDecoder().decode(encodedData));
+    String json = new String(cloudEvent.getData().toBytes());
+    MessagePublishedData.Builder builder = MessagePublishedData.newBuilder();
+    JsonFormat.parser().merge(json, builder);
+    MessagePublishedData data = builder.build();
 
     // "Message published data
     logger.info("Message: " + data.getMessage());
-    logger.info("TextData: " + textData);
+    logger.info("TextData: " + data.getMessage().getData().toStringUtf8());
     logger.info("Subscription: " + data.getSubscription());
 
   }

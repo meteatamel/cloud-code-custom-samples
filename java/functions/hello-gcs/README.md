@@ -39,16 +39,18 @@ You should see the following in the service logs:
 
 ```sh
 ...
-INFO: CloudEvent information:
-Feb 23, 2023 1:47:02 PM functions.Function accept
-INFO:   Id: 123451234512345
-Feb 23, 2023 1:47:02 PM functions.Function accept
-INFO:   Source: //storage.googleapis.com/projects/_/buckets/MY-BUCKET-NAME
-Feb 23, 2023 1:47:02 PM functions.Function accept
-INFO:   Type: google.cloud.storage.object.v1.finalized
-Feb 23, 2023 1:47:02 PM functions.Function accept
-
-TODO: Check why StorageObjectData is empty
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Source: //storage.googleapis.com/projects/_/buckets/MY-BUCKET-NAME
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Type: google.cloud.storage.object.v1.finalized
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Name: MY_FILE.txt
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Bucket: MY_BUCKET
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Size: 352
+Feb 24, 2023 11:01:04 AM functions.Function accept
+INFO: Content type: text/plain
 ```
 
 ## Before deploying to Google Cloud
