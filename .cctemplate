@@ -24,6 +24,11 @@
             "description": "An AuditLog triggered Java Cloud Functions template"
         },
         {
+            "path": "java/run/hello-http",
+            "name": "Java: Cloud Run - HelloHttp",
+            "description": "An HTTP triggered Java Cloud Run template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"

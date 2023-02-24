@@ -79,6 +79,11 @@ Node.js:
 
 ### Cloud Run
 
+Java:
+
+* [Java: Cloud Run - HelloHttp](java/run/hello-http) - An HTTP triggered Java
+  Cloud Run template.
+
 .NET:
 
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
