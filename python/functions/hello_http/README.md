@@ -13,7 +13,10 @@ pip install -r requirements.txt
 Run the function:
 
 ```sh
-functions-framework --target=hello_http
+functions-framework --target=hello_http --debug
+...
+ * Running on http://192.168.1.74:8080/ (Press CTRL+C to quit)
+...
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
