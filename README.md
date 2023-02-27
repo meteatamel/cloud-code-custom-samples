@@ -77,6 +77,11 @@ Node.js:
 * [Node.js: Cloud Functions - HelloAuditLog](nodejs/functions/hello-auditLog) - An
   AuditLog triggered Node.js Cloud Functions template.
 
+Python:
+
+* [Python: Cloud Functions - hello_http](python/functions/hello_http) - An
+  HTTP triggered Python Cloud Functions template.
+
 ### Cloud Run
 
 Java:
