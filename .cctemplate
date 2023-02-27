@@ -29,6 +29,11 @@
             "description": "An HTTP triggered Java Cloud Run template"
         },
         {
+            "path": "java/run/hello-gcs",
+            "name": "Java: Cloud Run - HelloGcs",
+            "description": "A Cloud Storage triggered Java Cloud Run template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"
