@@ -14,10 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-echo "Enable required services"
-set -v
-gcloud services enable \
-  artifactregistry.googleapis.com \
-  cloudbuild.googleapis.com \
-  cloudfunctions.googleapis.com \
-  run.googleapis.com
+source $(dirname $0)/config.sh
+
+if [ "$SERVICE_TYPE" = "cloud-functions" ]
+then
+  echo "Triggering $SERVICE_NAME with HTTP"
+  gcloud functions call $SERVICE_NAME \
+    --gen2 \
+    --region $REGION
+elif [ "$SERVICE_TYPE" = "cloud-run" ]
+  echo "Triggering $SERVICE_NAME with HTTP"
+  URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
+  set -x
+  curl $URL
+fi
