@@ -34,6 +34,11 @@
             "description": "A Cloud Storage triggered Java Cloud Run template"
         },
         {
+            "path": "java/run/hello-pubsub",
+            "name": "Java: Cloud Run - HelloPubSub",
+            "description": "A Pub/Sub triggered Java Cloud Run template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"
