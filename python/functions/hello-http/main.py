@@ -11,8 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 
+import functions_framework
+
 @functions_framework.http
-def hello_get(request):
+def helloHttp(request):
     """HTTP Cloud Function.
     Args:
         request (flask.Request): The request object.

@@ -13,13 +13,7 @@ pip install -r requirements.txt
 Run the function:
 
 ```sh
-python3 main.py
-
-...
-Serving function...
-Function: helloHttp
-Signature type: http
-URL: http://localhost:8080/
+functions-framework --target=helloHttp
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
