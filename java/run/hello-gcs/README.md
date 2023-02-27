@@ -13,7 +13,7 @@ mvn compile
 Run:
 
 ```sh
-mvn function:run
+mvn spring-boot:run
 
 2023-02-27 13:33:19.404  INFO 50222 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
 2023-02-27 13:33:19.411  INFO 50222 --- [           main] run.Application                          : Started Application in 1.172 seconds (JVM running for 1.407)
