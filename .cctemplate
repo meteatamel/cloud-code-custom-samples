@@ -39,6 +39,11 @@
             "description": "A Pub/Sub triggered Java Cloud Run template"
         },
         {
+            "path": "java/run/hello-auditlog",
+            "name": "Java: Cloud Run - HelloAuditLog",
+            "description": "An AuditLog triggered Java Cloud Run template"
+        },
+        {
             "path": "dotnet/functions/HelloHttp",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"

@@ -20,7 +20,6 @@ import com.google.events.cloud.audit.v1.LogEntryData;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
 import io.cloudevents.CloudEvent;
-import java.util.Base64;
 import java.util.logging.Logger;
 
 public class Function implements CloudEventsFunction {

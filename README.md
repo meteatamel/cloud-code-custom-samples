@@ -92,6 +92,8 @@ Java:
   Java Cloud Run template.
 * [Java: Cloud Run - HelloPubSub](java/run/hello-pubsub) - A Pub/Sub triggered
   Java Cloud Run template.
+* [Java: Cloud Run - HelloAuditLog](dotnet/run/hello-audit-log) - An AuditLog
+  triggered Java Cloud Run template.
 
 .NET:
 
