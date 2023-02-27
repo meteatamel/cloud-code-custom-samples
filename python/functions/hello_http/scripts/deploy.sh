@@ -19,7 +19,7 @@ source $(dirname $0)/config.sh
 echo "Deploy $SERVICE_NAME to $REGION"
 gcloud functions deploy $SERVICE_NAME \
   --allow-unauthenticated \
-  --entry-point helloHttp \
+  --entry-point hello_http \
   --gen2 \
   --region $REGION \
   --runtime $RUNTIME \

@@ -1,4 +1,4 @@
-# Python: Cloud Functions - HelloHttp
+# Python: Cloud Functions - hello_http
 
  An HTTP triggered Python Cloud Functions template.
 
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 Run the function:
 
 ```sh
-functions-framework --target=helloHttp
+functions-framework --target=hello_http
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to
