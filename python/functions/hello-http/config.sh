@@ -22,7 +22,7 @@ export FUNCTION_NAME=hello_http
 export SERVICE_TYPE=functions
 export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
 
-export TEMPLATE_DIR=/Users/$USER/Library/Application Support/cloud-code/custom-templates
+export TEMPLATE_DIR="/Users/$USER/Library/Application Support/cloud-code/custom-templates"
 export REPO_NAME=https-github-com-meteatamel-cloud-code-custom-templates-git-1
 
 # Copy scripts from common dir to app dir (if not already there).
