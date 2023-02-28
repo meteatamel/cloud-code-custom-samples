@@ -21,11 +21,11 @@ then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud functions deploy $SERVICE_NAME \
     --allow-unauthenticated \
-    --entry-point $ENTRY_POINT \
+    --entry-point $FUNCTION_NAME \
     --gen2 \
     --region $REGION \
     --runtime $RUNTIME \
-    --source . \
+    --source .. \
     --trigger-http
 elif [ "$SERVICE_TYPE" = "run" ]
 then
@@ -33,5 +33,5 @@ then
   gcloud run deploy $SERVICE_NAME \
     --allow-unauthenticated \
     --region $REGION \
-    --source .
+    --source ..
 fi
