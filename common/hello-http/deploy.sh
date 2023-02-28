@@ -28,10 +28,10 @@ then
     --source .. \
     --trigger-http
 elif [ "$SERVICE_TYPE" = "run" ]
+then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud run deploy $SERVICE_NAME \
     --allow-unauthenticated \
     --region $REGION \
     --source ..
-
 fi
