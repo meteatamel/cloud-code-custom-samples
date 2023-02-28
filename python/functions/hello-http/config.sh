@@ -20,7 +20,7 @@ export RUNTIME=python310
 export CANON_FUNCTION_NAME=hello-http
 export FUNCTION_NAME=hello_http
 export SERVICE_TYPE=functions
-export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
+export SERVICE_NAME=$CANON_FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
 
 export TEMPLATE_DIR="/Users/$USER/Library/Application Support/cloud-code/custom-templates"
 export REPO_NAME=https-github-com-meteatamel-cloud-code-custom-templates-git-1
