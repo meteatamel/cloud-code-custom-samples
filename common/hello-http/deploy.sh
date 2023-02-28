@@ -25,7 +25,7 @@ then
     --gen2 \
     --region $REGION \
     --runtime $RUNTIME \
-    --source .. \
+    --source . \
     --trigger-http
 elif [ "$SERVICE_TYPE" = "run" ]
 then
@@ -33,5 +33,5 @@ then
   gcloud run deploy $SERVICE_NAME \
     --allow-unauthenticated \
     --region $REGION \
-    --source ..
+    --source .
 fi
