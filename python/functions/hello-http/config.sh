@@ -26,7 +26,8 @@ export TEMPLATE_DIR="/Users/$USER/Library/Application Support/cloud-code/custom-
 export REPO_NAME=https-github-com-meteatamel-cloud-code-custom-templates-git-1
 
 # Copy scripts from common dir to app dir (if not already there).
-if [[ ! -f setup.sh ]]
+if [[ ! -d scripts ]]
 then
-  cp "$TEMPLATE_DIR/$REPO_NAME/common/$CANON_FUNCTION_NAME"/* .
+  mkdir scripts 
+  cp "$TEMPLATE_DIR/$REPO_NAME/common/$CANON_FUNCTION_NAME"/* scripts
 fi
