@@ -1,4 +1,4 @@
-# Python: Cloud Functions - hello_http
+# Python: Cloud Functions - hello-http
 
  An HTTP triggered Python Cloud Functions template.
 

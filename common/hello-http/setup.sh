@@ -14,7 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-export PROJECT_ID=$(gcloud config get-value project)
-export REGION=us-central1
-export RUNTIME=python310
-export SERVICE_NAME=hello-http-function-$RUNTIME
+echo "Enable required services"
+set -v
+gcloud services enable \
+  artifactregistry.googleapis.com \
+  cloudbuild.googleapis.com \
+  cloudfunctions.googleapis.com \
+  run.googleapis.com
+
+# copy scripts from common dir to app dir
+cp "/Users/$USER/Library/Application Support/cloud-code/custom-templates/https-github-com-meteatamel-cloud-code-custom-templates-git-1/common/* .

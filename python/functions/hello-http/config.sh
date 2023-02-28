@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
-
-echo "Triggering $SERVICE_NAME with HTTP"
-gcloud functions call $SERVICE_NAME \
-  --gen2 \
-  --region $REGION
+export PROJECT_ID=$(gcloud config get-value project)
+export REGION=us-central1
+export RUNTIME=python310
+export FUNCTION_NAME=hello_http
+export SERVICE_TYPE=functions
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
