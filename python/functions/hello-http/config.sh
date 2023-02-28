@@ -17,6 +17,6 @@
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=us-central1
 export RUNTIME=python310
-export SERVICE_TYPE=cloud-functions
-export SERVICE_NAME=hello-http-function-$RUNTIME
 export FUNCTION_NAME=hello_http
+export SERVICE_TYPE=functions
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME

@@ -16,7 +16,7 @@
 
 source $(dirname $0)/config.sh
 
-if [ "$SERVICE_TYPE" = "cloud-functions" ]
+if [ "$SERVICE_TYPE" = "functions" ]
 then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud functions deploy $SERVICE_NAME \
@@ -27,7 +27,7 @@ then
     --runtime $RUNTIME \
     --source .. \
     --trigger-http
-elif [ "$SERVICE_TYPE" = "cloud-run" ]
+elif [ "$SERVICE_TYPE" = "run" ]
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud run deploy $SERVICE_NAME \
     --allow-unauthenticated \
