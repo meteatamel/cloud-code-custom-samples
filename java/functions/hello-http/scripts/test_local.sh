@@ -15,4 +15,4 @@
 # limitations under the License.
 
 set -v
-curl http://localhost:8081
+curl http://localhost:8080
