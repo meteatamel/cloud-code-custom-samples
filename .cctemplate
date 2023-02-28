@@ -124,8 +124,8 @@
             "description": "An AuditLog triggered Node.js Cloud Run template"
         },
         {
-            "path": "python/functions/hello_http",
-            "name": "Python: Cloud Functions - hello_http",
+            "path": "python/functions/hello-http",
+            "name": "Python: Cloud Functions - hello-http",
             "description": "An HTTP triggered Python Cloud Functions template"
         }
     ]
