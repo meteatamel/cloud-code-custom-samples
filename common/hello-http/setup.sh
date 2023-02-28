@@ -21,6 +21,3 @@ gcloud services enable \
   cloudbuild.googleapis.com \
   cloudfunctions.googleapis.com \
   run.googleapis.com
-
-# copy scripts from common dir to app dir
-cp "/Users/$USER/Library/Application Support/cloud-code/custom-templates/https-github-com-meteatamel-cloud-code-custom-templates-git-1/common/* .
