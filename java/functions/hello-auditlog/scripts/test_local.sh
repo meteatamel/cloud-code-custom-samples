@@ -16,7 +16,7 @@
 
 echo "Trigger the function by sending an AuditLog CloudEvent"
 set -v
-curl localhost:8081 -v \
+curl localhost:8080 -v \
   -X POST \
   -H "Content-Type: application/json" \
   -H "ce-id: projects/test-project/logs/cloudaudit.googleapis.com%2Fdata_access1234567123456789" \

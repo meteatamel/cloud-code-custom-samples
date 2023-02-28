@@ -16,7 +16,7 @@
 
 echo "Trigger the function by sending a Cloud Storage CloudEvent"
 set -v
-curl localhost:8081 -v \
+curl localhost:8080 -v \
   -X POST \
   -H "Content-Type: application/json" \
   -H "ce-id: 123451234512345" \

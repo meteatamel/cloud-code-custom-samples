@@ -48,7 +48,7 @@
           <version>0.10.1</version>
           <configuration>
             <functionTarget>functions.Function</functionTarget>
-            <port>8081</port>
+            <!-- <port>8080</port> -->
           </configuration>
         </plugin>
       </plugins>

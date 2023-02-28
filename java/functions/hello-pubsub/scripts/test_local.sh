@@ -18,7 +18,7 @@
 # and event attributes are stored as part of message metadata.
 
 echo "Trigger the function by sending a binary-mode CloudEvent with a Pub/Sub message as the event data"
-curl localhost:8081 -v \
+curl localhost:8080 -v \
   -X POST \
   -H "Content-Type: application/json" \
   -H "ce-specversion: 1.0" \
