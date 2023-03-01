@@ -1,4 +1,4 @@
-# Java: Cloud Functions - HelloPubSub
+# Java: Cloud Functions - hello-pubsub
 
 A Pub/Sub triggered Java Cloud Functions template.
 

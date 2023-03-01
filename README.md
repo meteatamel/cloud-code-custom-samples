@@ -59,22 +59,22 @@ Java:
 
 * [Java: Cloud Functions - hello-http](java/functions/hello-http) - An
   HTTP triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloGcs](java/functions/hello-gcs) - A
+* [Java: Cloud Functions - hello-gcs](java/functions/hello-gcs) - A
   Cloud Storage triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloPubSub](java/functions/hello-pubsub) - A
+* [Java: Cloud Functions - hello-pubsub](java/functions/hello-pubsub) - A
   Pub/Sub triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloAuditLog](java/functions/hello-auditlog) - An
+* [Java: Cloud Functions - hello-auditlog](java/functions/hello-auditlog) - An
   AuditLog triggered Java Cloud Functions template.
 
 Node.js:
 
 * [Node.js: Cloud Functions - hello-http](nodejs/functions/hello-http) - An
   HTTP triggered Node.js Cloud Functions template.
-* [Node.js: Cloud Functions - HelloGcs](nodejs/functions/hello-gcs) - A
+* [Node.js: Cloud Functions - hello-gcs](nodejs/functions/hello-gcs) - A
   Cloud Storage triggered Node.js Cloud Functions template.
-* [Node.js: Cloud Functions - HelloPubSub](nodejs/functions/hello-pubsub) - A
+* [Node.js: Cloud Functions - hello-pubsub](nodejs/functions/hello-pubsub) - A
   Pub/Sub triggered Node.js Cloud Functions template.
-* [Node.js: Cloud Functions - HelloAuditLog](nodejs/functions/hello-auditLog) - An
+* [Node.js: Cloud Functions - hello-auditlog](nodejs/functions/hello-auditLog) - An
   AuditLog triggered Node.js Cloud Functions template.
 
 Python:
@@ -99,22 +99,22 @@ Java:
 
 * [Java: Cloud Run - hello-http](java/run/hello-http) - An HTTP triggered Java
   Cloud Run template.
-* [Java: Cloud Run - HelloGcs](java/run/hello-gcs) - A Cloud Storage triggered
+* [Java: Cloud Run - hello-gcs](java/run/hello-gcs) - A Cloud Storage triggered
   Java Cloud Run template.
-* [Java: Cloud Run - HelloPubSub](java/run/hello-pubsub) - A Pub/Sub triggered
+* [Java: Cloud Run - hello-pubsub](java/run/hello-pubsub) - A Pub/Sub triggered
   Java Cloud Run template.
-* [Java: Cloud Run - HelloAuditLog](dotnet/run/hello-audit-log) - An AuditLog
+* [Java: Cloud Run - hello-auditlog](dotnet/run/hello-audit-log) - An AuditLog
   triggered Java Cloud Run template.
 
 Node.js:
 
 * [Node.js: Cloud Run - hello-http](nodejs/run/hello-http) - An HTTP triggered Node.js
   Cloud Run template.
-* [Node.js: Cloud Run - HelloGcs](nodejs/run/hello-gcs) - A Cloud Storage triggered
+* [Node.js: Cloud Run - hello-gcs](nodejs/run/hello-gcs) - A Cloud Storage triggered
   Node.js Cloud Run template.
-* [Node.js: Cloud Run - HelloPubSub](nodejs/run/hello-pubsub) - A Pub/Sub triggered
+* [Node.js: Cloud Run - hello-pubsub](nodejs/run/hello-pubsub) - A Pub/Sub triggered
   Node.js Cloud Run template.
-* [Node.js: Cloud Run - HelloAuditLog](nodejs/run/hello-auditLog) - An AuditLog
+* [Node.js: Cloud Run - hello-auditlog](nodejs/run/hello-auditLog) - An AuditLog
   triggered Node.js Cloud Run template.
 
 -------

@@ -1,4 +1,4 @@
-# Node.js: Cloud Run - HelloGcs
+# Node.js: Cloud Run - hello-gcs
 
  A Cloud Storage triggered Node.js Cloud Run template.
 

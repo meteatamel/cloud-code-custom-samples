@@ -1,4 +1,4 @@
-# Node.js: Cloud Run - HelloAuditLog
+# Node.js: Cloud Run - hello-auditlog
 
  An AuditLog triggered Node.js Cloud Run template.
 

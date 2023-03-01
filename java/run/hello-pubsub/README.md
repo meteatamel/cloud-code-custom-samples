@@ -1,4 +1,4 @@
-# Java: Cloud Run - HelloPubSub
+# Java: Cloud Run - hello-pubsub
 
  A Pub/Sub triggered Java Cloud Run template.
 

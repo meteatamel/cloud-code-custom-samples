@@ -1,4 +1,4 @@
-# Node.js: Cloud Functions - HelloAuditLog
+# Node.js: Cloud Functions - hello-auditlog
 
 An AuditLog triggered Node.js Cloud Functions template.
 

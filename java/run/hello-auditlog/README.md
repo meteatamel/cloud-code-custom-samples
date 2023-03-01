@@ -1,4 +1,4 @@
-# Java: Cloud Run - HelloAuditLog
+# Java: Cloud Run - hello-auditlog
 
  An AuditLog triggered Java Cloud Run template.
 

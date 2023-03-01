@@ -1,4 +1,4 @@
-# Java: Cloud Run - HelloGcs
+# Java: Cloud Run - hello-gcs
 
  A Cloud Storage triggered Java Cloud Run template.
 

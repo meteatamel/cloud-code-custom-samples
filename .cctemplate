@@ -5,42 +5,42 @@
     "templates": [
         {
             "path": "java/functions/hello-http",
-            "name": "Java: Cloud Functions - HelloHttp",
+            "name": "Java: Cloud Functions - hello-http",
             "description": "An HTTP triggered Java Cloud Functions template"
         },
         {
             "path": "java/functions/hello-gcs",
-            "name": "Java: Cloud Functions - HelloGcs",
+            "name": "Java: Cloud Functions - hello-gcs",
             "description": "A Cloud Storage triggered Java Cloud Functions template"
         },
         {
             "path": "java/functions/hello-pubsub",
-            "name": "Java: Cloud Functions - HelloPubSub",
+            "name": "Java: Cloud Functions - hello-pubsub",
             "description": "A Pub/Sub triggered Java Cloud Functions template"
         },
         {
             "path": "java/functions/hello-auditlog",
-            "name": "Java: Cloud Functions - HelloAuditLog",
+            "name": "Java: Cloud Functions - hello-auditlog",
             "description": "An AuditLog triggered Java Cloud Functions template"
         },
         {
             "path": "java/run/hello-http",
-            "name": "Java: Cloud Run - HelloHttp",
+            "name": "Java: Cloud Run - hello-http",
             "description": "An HTTP triggered Java Cloud Run template"
         },
         {
             "path": "java/run/hello-gcs",
-            "name": "Java: Cloud Run - HelloGcs",
+            "name": "Java: Cloud Run - hello-gcs",
             "description": "A Cloud Storage triggered Java Cloud Run template"
         },
         {
             "path": "java/run/hello-pubsub",
-            "name": "Java: Cloud Run - HelloPubSub",
+            "name": "Java: Cloud Run - hello-pubsub",
             "description": "A Pub/Sub triggered Java Cloud Run template"
         },
         {
             "path": "java/run/hello-auditlog",
-            "name": "Java: Cloud Run - HelloAuditLog",
+            "name": "Java: Cloud Run - hello-auditlog",
             "description": "An AuditLog triggered Java Cloud Run template"
         },
         {
@@ -85,42 +85,42 @@
         },
         {
             "path": "nodejs/functions/hello-http",
-            "name": "Node.js: Cloud Functions - HelloHttp",
+            "name": "Node.js: Cloud Functions - hello-http",
             "description": "An HTTP triggered Node.js Cloud Functions template"
         },
         {
             "path": "nodejs/functions/hello-gcs",
-            "name": "Node.js: Cloud Functions - HelloGcs",
+            "name": "Node.js: Cloud Functions - hello-gcs",
             "description": "A Cloud Storage triggered Node.js Cloud Functions template"
         },
         {
             "path": "nodejs/functions/hello-pubsub",
-            "name": "Node.js: Cloud Functions - HelloPubSub",
+            "name": "Node.js: Cloud Functions - hello-pubsub",
             "description": "A Pub/Sub triggered Node.js Cloud Functions template"
         },
         {
             "path": "nodejs/functions/hello-auditlog",
-            "name": "Node.js: Cloud Functions - HelloAuditLog",
+            "name": "Node.js: Cloud Functions - hello-auditlog",
             "description": "An AuditLog triggered Node.js Cloud Functions template"
         },
         {
             "path": "nodejs/run/hello-http",
-            "name": "Node.js: Cloud Run - HelloHttp",
+            "name": "Node.js: Cloud Run - hello-http",
             "description": "An HTTP triggered Node.js Cloud Run template"
         },
         {
             "path": "nodejs/run/hello-gcs",
-            "name": "Node.js: Cloud Run - HelloGcs",
+            "name": "Node.js: Cloud Run - hello-gcs",
             "description": "A Cloud Storage triggered Node.js Cloud Run template"
         },
         {
             "path": "nodejs/run/hello-pubsub",
-            "name": "Node.js: Cloud Run - HelloPubSub",
+            "name": "Node.js: Cloud Run - hello-pubsub",
             "description": "A Pub/Sub triggered Node.js Cloud Run template"
         },
         {
             "path": "nodejs/run/hello-auditLog",
-            "name": "Node.js: Cloud Run - HelloAuditLog",
+            "name": "Node.js: Cloud Run - hello-auditlog",
             "description": "An AuditLog triggered Node.js Cloud Run template"
         },
         {

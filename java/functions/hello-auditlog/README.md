@@ -1,4 +1,4 @@
-# Java: Cloud Functions - HelloAuditLog
+# Java: Cloud Functions - hello-auditlog
 
 An AuditLog triggered Java Cloud Functions template.
 

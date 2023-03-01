@@ -1,4 +1,4 @@
-# Node.js: Cloud Functions - HelloPubSub
+# Node.js: Cloud Functions - hello-pubsub
 
 A Pub/Sub triggered Node.js Cloud Functions template.
 

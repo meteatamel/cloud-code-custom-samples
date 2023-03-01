@@ -1,4 +1,4 @@
-# Node.js: Cloud Functions - HelloGcs
+# Node.js: Cloud Functions - hello-gcs
 
 A Cloud Storage triggered Node.js Cloud Functions template.
 

@@ -1,4 +1,4 @@
-# Java: Cloud Functions - HelloGcs
+# Java: Cloud Functions - hello-gcs
 
 A Cloud Storage triggered Java Cloud Functions template.
 
