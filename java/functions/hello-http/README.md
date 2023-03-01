@@ -1,4 +1,4 @@
-# Java: Cloud Functions - HelloHttp
+# Java: Cloud Functions - hello-http
 
  An HTTP triggered Java Cloud Functions template.
 
@@ -17,10 +17,10 @@ mvn function:run
 
 ...
 INFO: Serving function...
-Feb 22, 2023 1:37:50 PM com.google.cloud.functions.invoker.runner.Invoker logServerInfo
-INFO: Function: functions.HelloHttp
-Feb 22, 2023 1:37:50 PM com.google.cloud.functions.invoker.runner.Invoker logServerInfo
-INFO: URL: http://localhost:8081/
+Mar 01, 2023 12:57:13 PM com.google.cloud.functions.invoker.runner.Invoker logServerInfo
+INFO: Function: functions.Function
+Mar 01, 2023 12:57:13 PM com.google.cloud.functions.invoker.runner.Invoker logServerInfo
+INFO: URL: http://localhost:8080/
 ```
 
 Inside the [scripts](scripts) folder, run [test_local.sh](scripts/test.sh) to

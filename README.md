@@ -46,7 +46,7 @@ To use these templates as starter projects:
 
 Java:
 
-* [Java: Cloud Functions - HelloHttp](java/functions/hello-http) - An
+* [Java: Cloud Functions - hello-http](java/functions/hello-http) - An
   HTTP triggered Java Cloud Functions template.
 * [Java: Cloud Functions - HelloGcs](java/functions/hello-gcs) - A
   Cloud Storage triggered Java Cloud Functions template.
