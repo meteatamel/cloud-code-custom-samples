@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +15,16 @@
 
 source $(dirname $0)/config.sh
 
-echo "Triggering $SERVICE_NAME with HTTP"
-URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
-set -x
-curl $URL
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+  echo "Triggering $SERVICE_NAME with HTTP"
+  gcloud functions call $SERVICE_NAME \
+    --gen2 \
+    --region $REGION
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  echo "Triggering $SERVICE_NAME with HTTP"
+  URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
+  set -x
+  curl $URL
+fi

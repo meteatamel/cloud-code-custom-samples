@@ -29,6 +29,8 @@ jobs:
           cp $i nodejs/functions/hello-http/scripts
           cp $i python/functions/hello-http/scripts
           cp $i dotnet/run/hello-http/scripts
+          cp $i java/run/hello-http/scripts
+          cp $i nodejs/run/hello-http/scripts
           cp $i python/run/hello-http/scripts
         done
 
