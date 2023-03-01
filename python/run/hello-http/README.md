@@ -13,7 +13,7 @@ pip3 install -r requirements.txt
 Run the function:
 
 ```sh
-functions-framework --target=hello_http --debug
+python3 main.py
 ...
  * Running on http://192.168.1.74:8080/ (Press CTRL+C to quit)
 ...

@@ -11,14 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 
-import functions_framework
+import os
+from flask import Flask
 
-@functions_framework.http
-def hello_http(request):
+PORT = os.getenv('PORT') or '8080'
+app = Flask(__name__)
+
+@app.route("/")
+def hello_http():
     """HTTP Cloud Function.
-    Args:
-        request (flask.Request): The request object.
-        <https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data>
     Returns:
         The response text, or any set of values that can be turned into a
         Response object using `make_response`
@@ -29,3 +30,6 @@ def hello_http(request):
         <https://cloud.google.com/functions/docs/writing/http#http_frameworks>
     """
     return 'Hello World!'
+
+if __name__ == '__main__':
+    app.run(host="localhost", port=PORT)
