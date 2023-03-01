@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2023 Google LLC
+# Copyright 2022 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,20 +18,14 @@ source $(dirname $0)/config.sh
 
 if [ "$SERVICE_TYPE" = "functions" ]
 then
-  echo "Deploy $SERVICE_NAME to $REGION"
-  gcloud functions deploy $SERVICE_NAME \
-    --allow-unauthenticated \
-    --entry-point $ENTRY_POINT \
+  echo "Triggering $SERVICE_NAME with HTTP"
+  gcloud functions call $SERVICE_NAME \
     --gen2 \
-    --region $REGION \
-    --runtime $RUNTIME \
-    --source .. \
-    --trigger-http
+    --region $REGION
 elif [ "$SERVICE_TYPE" = "run" ]
 then
-  echo "Deploy $SERVICE_NAME to $REGION"
-  gcloud run deploy $SERVICE_NAME \
-    --allow-unauthenticated \
-    --region $REGION \
-    --source ..
+  echo "Triggering $SERVICE_NAME with HTTP"
+  URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
+  set -x
+  curl $URL
 fi
