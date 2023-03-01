@@ -21,7 +21,7 @@ then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud functions deploy $SERVICE_NAME \
     --allow-unauthenticated \
-    --entry-point $FUNCTION_NAME \
+    --entry-point $ENTRY_POINT \
     --gen2 \
     --region $REGION \
     --runtime $RUNTIME \
