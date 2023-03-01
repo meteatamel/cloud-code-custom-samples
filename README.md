@@ -79,7 +79,7 @@ Node.js:
 
 Python:
 
-* [Python: Cloud Functions - hello_http](python/functions/hello_http) - An
+* [Python: Cloud Functions - hello-http](python/functions/hello-http) - An
   HTTP triggered Python Cloud Functions template.
 
 ### Cloud Run
