@@ -1,6 +1,6 @@
-# .NET: Cloud Functions - HelloAuditLog
+# .NET: Cloud Functions - hello-gcs
 
-An AuditLog triggered .NET Cloud Functions template.
+A Cloud Storage triggered .NET Cloud Functions template.
 
 ## Test locally
 
@@ -25,8 +25,9 @@ test the function locally:
 
 ## Before deploying to Google Cloud
 
-Run [setup.sh](scripts/setup.sh) to enable required services, and create a
-Pub/Sub topic:
+Run [setup.sh](scripts/setup.sh) to enable required services, grant the
+`pubsub.publisher` role to the Cloud Storage service account and create a Google
+Cloud Storage (GCS) bucket:
 
 ```sh
 ./setup.sh
@@ -45,4 +46,8 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 
 ## Test in Google Cloud
 
-TODO
+Run [test_cloud.sh](scripts/test_cloud.sh) to test the function in Google Cloud:
+
+```sh
+./test_cloud.sh
+```

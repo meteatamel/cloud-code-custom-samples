@@ -1,4 +1,4 @@
-# .NET: Cloud Run - HelloGcs
+# .NET: Cloud Run - hello-gcs
 
  A Cloud Storage triggered .NET Cloud Run template.
 

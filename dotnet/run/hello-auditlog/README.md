@@ -1,4 +1,4 @@
-# .NET: Cloud Run - HelloAuditLog
+# .NET: Cloud Run - hello-auditlog
 
  An AuditLog triggered .NET Cloud Run template.
 

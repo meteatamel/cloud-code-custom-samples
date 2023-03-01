@@ -1,4 +1,4 @@
-# .NET: Cloud Functions - HelloPubSub
+# .NET: Cloud Functions - hello-pubsub
 
 A Pub/Sub triggered .NET Cloud Functions template.
 

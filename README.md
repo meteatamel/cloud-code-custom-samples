@@ -48,11 +48,11 @@ To use these templates as starter projects:
 
 * [.NET: Cloud Functions - hello-http](dotnet/functions/hello-http) - An
   HTTP triggered .NET Cloud Functions template.
-* [.NET: Cloud Functions - HelloGcs](dotnet/functions/HelloGcs) - A
+* [.NET: Cloud Functions - hello-gcs](dotnet/functions/hello-gcs) - A
   Cloud Storage triggered .NET Cloud Functions template.
-* [.NET: Cloud Functions - HelloPubSub](dotnet/functions/HelloPubSub) - A
+* [.NET: Cloud Functions - hello-pubsub](dotnet/functions/hello-pubsub) - A
   Pub/Sub triggered .NET Cloud Functions template.
-* [.NET: Cloud Functions - HelloAuditLog](dotnet/functions/HelloAuditLog) - An
+* [.NET: Cloud Functions - hello-auditlog](dotnet/functions/hello-auditlog) - An
   AuditLog triggered .NET Cloud Functions template.
 
 Java:
@@ -88,11 +88,11 @@ Python:
 
 * [.NET: Cloud Run - hello-http](dotnet/run/hello-http) - An HTTP triggered .NET
   Cloud Run template.
-* [.NET: Cloud Run - HelloGcs](dotnet/run/HelloGcs) - A Cloud Storage triggered
+* [.NET: Cloud Run - hello-gcs](dotnet/run/hello-gcs) - A Cloud Storage triggered
   .NET Cloud Run template.
-* [.NET: Cloud Run - HelloPubSub](dotnet/run/HelloPubSub) - A Pub/Sub triggered
+* [.NET: Cloud Run - hello-pubsub](dotnet/run/hello-pubsub) - A Pub/Sub triggered
   .NET Cloud Run template.
-* [.NET: Cloud Run - HelloAuditLog](dotnet/run/HelloAuditLog) - An AuditLog
+* [.NET: Cloud Run - hello-auditlog](dotnet/run/hello-auditlog) - An AuditLog
   triggered .NET Cloud Run template.
 
 Java:

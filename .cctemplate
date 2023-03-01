@@ -45,42 +45,42 @@
         },
         {
             "path": "dotnet/functions/hello-http",
-            "name": ".NET: Cloud Functions - HelloHttp",
+            "name": ".NET: Cloud Functions - hello-http",
             "description": "An HTTP triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/functions/HelloGcs",
-            "name": ".NET: Cloud Functions - HelloGcs",
+            "path": "dotnet/functions/hello-gcs",
+            "name": ".NET: Cloud Functions - hello-gcs",
             "description": "A Cloud Storage triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/functions/HelloPubSub",
-            "name": ".NET: Cloud Functions - HelloPubSub",
+            "path": "dotnet/functions/hello-pubsub",
+            "name": ".NET: Cloud Functions - hello-pubsub",
             "description": "A Pub/Sub triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/functions/HelloAuditLog",
-            "name": ".NET: Cloud Functions - HelloAuditLog",
+            "path": "dotnet/functions/hello-auditlog",
+            "name": ".NET: Cloud Functions - hello-auditlog",
             "description": "An AuditLog triggered .NET Cloud Functions template"
         },
         {
             "path": "dotnet/run/hello-http",
-            "name": ".NET: Cloud Run - HelloHttp",
+            "name": ".NET: Cloud Run - hello-http",
             "description": "An HTTP triggered .NET Cloud Run template"
         },
         {
-            "path": "dotnet/run/HelloGcs",
-            "name": ".NET: Cloud Run - HelloGcs",
+            "path": "dotnet/run/hello-gcs",
+            "name": ".NET: Cloud Run - hello-gcs",
             "description": "A Cloud Storage triggered .NET Cloud Run template"
         },
         {
-            "path": "dotnet/run/HelloPubSub",
-            "name": ".NET: Cloud Run - HelloPubSub",
+            "path": "dotnet/run/hello-pubsub",
+            "name": ".NET: Cloud Run - hello-pubsub",
             "description": "A Pub/Sub triggered .NET Cloud Run template"
         },
         {
-            "path": "dotnet/run/HelloAuditLog",
-            "name": ".NET: Cloud Run - HelloAuditLog",
+            "path": "dotnet/run/hello-auditlog",
+            "name": ".NET: Cloud Run - hello-auditlog",
             "description": "An AuditLog triggered .NET Cloud Run template"
         },
         {

@@ -1,4 +1,4 @@
-# .NET: Cloud Run - HelloPubSub
+# .NET: Cloud Run - hello-pubsub
 
  A Pub/Sub triggered .NET Cloud Run template.
 
