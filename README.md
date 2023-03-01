@@ -57,7 +57,7 @@ Java:
 
 .NET:
 
-* [.NET: Cloud Functions - HelloHttp](dotnet/functions/HelloHttp) - An
+* [.NET: Cloud Functions - hello-http](dotnet/functions/hello-http) - An
   HTTP triggered .NET Cloud Functions template.
 * [.NET: Cloud Functions - HelloGcs](dotnet/functions/HelloGcs) - A
   Cloud Storage triggered .NET Cloud Functions template.

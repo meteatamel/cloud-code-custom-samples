@@ -1,4 +1,4 @@
-# .NET: Cloud Functions - HelloHttp
+# .NET: Cloud Functions - hello-http
 
  An HTTP triggered .NET Cloud Functions template.
 
