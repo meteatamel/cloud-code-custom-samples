@@ -14,5 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set -v
-curl http://localhost:8080
+source $(dirname $0)/config.sh
+
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+  echo "Deploy $SERVICE_NAME to $REGION"
+  gcloud functions deploy $SERVICE_NAME \
+    --allow-unauthenticated \
+    --entry-point $ENTRY_POINT \
+    --gen2 \
+    --region $REGION \
+    --runtime $RUNTIME \
+    --source .. \
+    --trigger-http
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  echo "Deploy $SERVICE_NAME to $REGION"
+  gcloud run deploy $SERVICE_NAME \
+    --allow-unauthenticated \
+    --region $REGION \
+    --source ..
+fi
