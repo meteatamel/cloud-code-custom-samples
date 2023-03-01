@@ -130,7 +130,7 @@
         },
         {
             "path": "python/run/hello-http",
-            "name": "Python: Run - hello-http",
+            "name": "Python: Cloud Run - hello-http",
             "description": "An HTTP triggered Python Cloud Run template"
         }
     ]
