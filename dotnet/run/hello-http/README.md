@@ -1,4 +1,4 @@
-# .NET: Cloud Run - HelloHttp
+# .NET: Cloud Run - hello-http
 
  An HTTP triggered .NET Cloud Run template.
 

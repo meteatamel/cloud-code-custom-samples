@@ -86,7 +86,7 @@ Python:
 
 .NET:
 
-* [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
+* [.NET: Cloud Run - hello-http](dotnet/run/hello-http) - An HTTP triggered .NET
   Cloud Run template.
 * [.NET: Cloud Run - HelloGcs](dotnet/run/HelloGcs) - A Cloud Storage triggered
   .NET Cloud Run template.

@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
-
-echo "Triggering $SERVICE_NAME with HTTP"
-URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
-set -x
-curl $URL
+export PROJECT_ID=$(gcloud config get-value project)
+export REGION=us-central1
+export RUNTIME=dotnet6
+export FUNCTION_NAME=hello-http
+export SERVICE_TYPE=run
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
