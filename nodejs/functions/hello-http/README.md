@@ -1,4 +1,4 @@
-# Node.js: Cloud Functions - HelloHttp
+# Node.js: Cloud Functions - hello-http
 
  An HTTP triggered Node.js Cloud Functions template.
 

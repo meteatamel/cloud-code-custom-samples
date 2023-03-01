@@ -24,9 +24,10 @@ jobs:
       shell: bash
       run: >
         for i in common/*/*.sh; do
-          cp $i python/functions/hello-http/scripts
-          cp $i java/functions/hello-http/scripts
           cp $i dotnet/functions/hello-http/scripts
+          cp $i java/functions/hello-http/scripts
+          cp $i nodejs/functions/hello-http/scripts
+          cp $i python/functions/hello-http/scripts
         done
 
     - uses: stefanzweifel/git-auto-commit-action@v4

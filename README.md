@@ -44,17 +44,6 @@ To use these templates as starter projects:
 
 ### Cloud Functions
 
-Java:
-
-* [Java: Cloud Functions - hello-http](java/functions/hello-http) - An
-  HTTP triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloGcs](java/functions/hello-gcs) - A
-  Cloud Storage triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloPubSub](java/functions/hello-pubsub) - A
-  Pub/Sub triggered Java Cloud Functions template.
-* [Java: Cloud Functions - HelloAuditLog](java/functions/hello-auditlog) - An
-  AuditLog triggered Java Cloud Functions template.
-
 .NET:
 
 * [.NET: Cloud Functions - hello-http](dotnet/functions/hello-http) - An
@@ -66,9 +55,20 @@ Java:
 * [.NET: Cloud Functions - HelloAuditLog](dotnet/functions/HelloAuditLog) - An
   AuditLog triggered .NET Cloud Functions template.
 
+Java:
+
+* [Java: Cloud Functions - hello-http](java/functions/hello-http) - An
+  HTTP triggered Java Cloud Functions template.
+* [Java: Cloud Functions - HelloGcs](java/functions/hello-gcs) - A
+  Cloud Storage triggered Java Cloud Functions template.
+* [Java: Cloud Functions - HelloPubSub](java/functions/hello-pubsub) - A
+  Pub/Sub triggered Java Cloud Functions template.
+* [Java: Cloud Functions - HelloAuditLog](java/functions/hello-auditlog) - An
+  AuditLog triggered Java Cloud Functions template.
+
 Node.js:
 
-* [Node.js: Cloud Functions - HelloHttp](nodejs/functions/hello-http) - An
+* [Node.js: Cloud Functions - hello-http](nodejs/functions/hello-http) - An
   HTTP triggered Node.js Cloud Functions template.
 * [Node.js: Cloud Functions - HelloGcs](nodejs/functions/hello-gcs) - A
   Cloud Storage triggered Node.js Cloud Functions template.
@@ -84,17 +84,6 @@ Python:
 
 ### Cloud Run
 
-Java:
-
-* [Java: Cloud Run - HelloHttp](java/run/hello-http) - An HTTP triggered Java
-  Cloud Run template.
-* [Java: Cloud Run - HelloGcs](java/run/hello-gcs) - A Cloud Storage triggered
-  Java Cloud Run template.
-* [Java: Cloud Run - HelloPubSub](java/run/hello-pubsub) - A Pub/Sub triggered
-  Java Cloud Run template.
-* [Java: Cloud Run - HelloAuditLog](dotnet/run/hello-audit-log) - An AuditLog
-  triggered Java Cloud Run template.
-
 .NET:
 
 * [.NET: Cloud Run - HelloHttp](dotnet/run/HelloHttp) - An HTTP triggered .NET
@@ -105,6 +94,17 @@ Java:
   .NET Cloud Run template.
 * [.NET: Cloud Run - HelloAuditLog](dotnet/run/HelloAuditLog) - An AuditLog
   triggered .NET Cloud Run template.
+
+Java:
+
+* [Java: Cloud Run - HelloHttp](java/run/hello-http) - An HTTP triggered Java
+  Cloud Run template.
+* [Java: Cloud Run - HelloGcs](java/run/hello-gcs) - A Cloud Storage triggered
+  Java Cloud Run template.
+* [Java: Cloud Run - HelloPubSub](java/run/hello-pubsub) - A Pub/Sub triggered
+  Java Cloud Run template.
+* [Java: Cloud Run - HelloAuditLog](dotnet/run/hello-audit-log) - An AuditLog
+  triggered Java Cloud Run template.
 
 Node.js:
 
