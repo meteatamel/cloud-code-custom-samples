@@ -1,4 +1,4 @@
-# Node.js: Cloud Run - HelloHttp
+# Node.js: Cloud Run - hello-http
 
  An HTTP triggered Node.js Cloud Run template.
 
