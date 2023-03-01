@@ -14,19 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config.sh
-
-echo "Enable required services"
 set -v
-
-# Required services for both functions and run
-gcloud services enable \
-  artifactregistry.googleapis.com \
-  cloudbuild.googleapis.com \
-  run.googleapis.com
-
-if [ "$SERVICE_TYPE" = "functions" ]
-then
-gcloud services enable \
-  cloudfunctions.googleapis.com
-fi
+curl http://localhost:8080

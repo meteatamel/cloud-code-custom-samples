@@ -16,17 +16,16 @@
 
 source $(dirname $0)/config.sh
 
-echo "Enable required services"
-set -v
-
-# Required services for both functions and run
-gcloud services enable \
-  artifactregistry.googleapis.com \
-  cloudbuild.googleapis.com \
-  run.googleapis.com
-
 if [ "$SERVICE_TYPE" = "functions" ]
 then
-gcloud services enable \
-  cloudfunctions.googleapis.com
+  echo "Triggering $SERVICE_NAME with HTTP"
+  gcloud functions call $SERVICE_NAME \
+    --gen2 \
+    --region $REGION
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  echo "Triggering $SERVICE_NAME with HTTP"
+  URL=$(gcloud run services describe $SERVICE_NAME --region=$REGION --format 'value(status.url)')
+  set -x
+  curl $URL
 fi
