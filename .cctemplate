@@ -44,7 +44,7 @@
             "description": "An AuditLog triggered Java Cloud Run template"
         },
         {
-            "path": "dotnet/functions/HelloHttp",
+            "path": "dotnet/functions/hello-http",
             "name": ".NET: Cloud Functions - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Functions template"
         },
@@ -64,7 +64,7 @@
             "description": "An AuditLog triggered .NET Cloud Functions template"
         },
         {
-            "path": "dotnet/run/HelloHttp",
+            "path": "dotnet/run/hello-http",
             "name": ".NET: Cloud Run - HelloHttp",
             "description": "An HTTP triggered .NET Cloud Run template"
         },
