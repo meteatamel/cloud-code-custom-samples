@@ -127,6 +127,11 @@
             "path": "python/functions/hello-http",
             "name": "Python: Cloud Functions - hello-http",
             "description": "An HTTP triggered Python Cloud Functions template"
+        },
+        {
+            "path": "python/run/hello-http",
+            "name": "Python: Run - hello-http",
+            "description": "An HTTP triggered Python Cloud Run template"
         }
     ]
 }
