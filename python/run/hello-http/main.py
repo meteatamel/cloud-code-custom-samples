@@ -14,7 +14,6 @@
 import os
 from flask import Flask
 
-PORT = os.getenv('PORT') or '8080'
 app = Flask(__name__)
 
 @app.route("/")
@@ -32,4 +31,5 @@ def hello_http():
     return 'Hello World!'
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=PORT)
+  app.run(host="0.0.0.0", port=8080, use_reloader=True,
+          debug=True, threaded=True)
