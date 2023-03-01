@@ -1,4 +1,4 @@
-# Java: Cloud Run - HelloHttp
+# Java: Cloud Run - hello-http
 
  An HTTP triggered Java Cloud Run template.
 

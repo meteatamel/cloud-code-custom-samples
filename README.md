@@ -97,7 +97,7 @@ Python:
 
 Java:
 
-* [Java: Cloud Run - HelloHttp](java/run/hello-http) - An HTTP triggered Java
+* [Java: Cloud Run - hello-http](java/run/hello-http) - An HTTP triggered Java
   Cloud Run template.
 * [Java: Cloud Run - HelloGcs](java/run/hello-gcs) - A Cloud Storage triggered
   Java Cloud Run template.

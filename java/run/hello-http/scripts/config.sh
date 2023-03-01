@@ -17,4 +17,6 @@
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=us-central1
 export RUNTIME=java
-export SERVICE_NAME=hello-http-service-$RUNTIME
+export FUNCTION_NAME=hello-http
+export SERVICE_TYPE=run
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
