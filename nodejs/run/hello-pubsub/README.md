@@ -1,6 +1,6 @@
-# .NET: Cloud Run - hello-pubsub
+# Node.js: Cloud Run - hello-pubsub
 
- A Pub/Sub triggered .NET Cloud Run template.
+ A Pub/Sub triggered Node.js Cloud Run template.
 
 ## Test locally
 
