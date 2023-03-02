@@ -19,4 +19,7 @@ export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(pro
 export BUCKET_NAME="cloud-functions-bucket-${PROJECT_ID}"
 export REGION=us-central1
 export RUNTIME=nodejs18
-export SERVICE_NAME=hello-gcs-function-$RUNTIME
+export FUNCTION_NAME=hello-gcs
+export ENTRY_POINT=helloGCS
+export SERVICE_TYPE=functions
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
