@@ -15,8 +15,9 @@ $0 add|rm|audit
               2. push modified files to github
               3. wait few minutes for github workflow to run
               4. git pull
+              5. admin_scripts audit (to verify propagation)
               5. admin_scripts rm
-              6. push modified files to github
+              6. push to github (revert common scripts back to original state)
 EOF
 )
              
