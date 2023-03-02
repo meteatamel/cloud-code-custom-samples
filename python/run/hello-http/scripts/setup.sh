@@ -23,6 +23,7 @@ set -v
 gcloud services enable \
   artifactregistry.googleapis.com \
   cloudbuild.googleapis.com \
+  eventarc.googleapis.com \
   run.googleapis.com
 
 if [ "$SERVICE_TYPE" = "functions" ]
@@ -30,3 +31,6 @@ then
 gcloud services enable \
   cloudfunctions.googleapis.com
 fi
+
+echo "Create a Pub/Sub topic: $TOPIC_NAME"
+gcloud pubsub topics create ${TOPIC_NAME}
