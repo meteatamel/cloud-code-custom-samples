@@ -31,7 +31,7 @@ fi
 
 if [ "$1" == add ]
 then
-    for i in common/*/*.sh
+    for i in */*.sh
     do
         # make sure test line not already present
         if ! grep "$TEST_LINE" $i >/dev/null 2>&1
@@ -43,7 +43,7 @@ then
     done
 elif [ "$1" == "rm" ]
 then
-    for i in common/*/*.sh
+    for i in */*.sh
     do
         # make sure test line is present
         if grep "$TEST_LINE" $i >/dev/null 2>&1
@@ -65,9 +65,9 @@ then
             do
                 for script in setup.sh deploy.sh test_local.sh test_cloud.sh
                 do
-                    if ! diff $language/$service/$app/scripts/$script common/$app/$script
+                    if ! diff $language/$service/$app/scripts/$script $app/$script
                     then
-                        echo "$language/$service/$app/scripts/$script" does NOT match "common/$app/$script"
+                        echo "$language/$service/$app/scripts/$script" does NOT match "$app/$script"
                         exit 1
                     fi
                 done 
