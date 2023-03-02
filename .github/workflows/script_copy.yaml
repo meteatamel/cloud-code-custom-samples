@@ -23,15 +23,12 @@ jobs:
     - name: Copy script files
       shell: bash
       run: >
-        for i in common/*/*.sh; do
-          cp $i dotnet/functions/hello-http/scripts
-          cp $i java/functions/hello-http/scripts
-          cp $i nodejs/functions/hello-http/scripts
-          cp $i python/functions/hello-http/scripts
-          cp $i dotnet/run/hello-http/scripts
-          cp $i java/run/hello-http/scripts
-          cp $i nodejs/run/hello-http/scripts
-          cp $i python/run/hello-http/scripts
+        for language in java nodejs dotnet python; do
+          for service in functions run; do
+            for app in hello-http hello-gcs hello-auditlog hello-pubsub; do
+              cp common/$app/*.sh $language/$service/$app/scripts
+            done
+          done
         done
 
     - uses: stefanzweifel/git-auto-commit-action@v4
