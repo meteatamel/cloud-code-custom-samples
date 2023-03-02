@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +15,4 @@
 
 source $(dirname $0)/config.sh
 
-echo "Triggering $SERVICE_NAME by uploading a file to $BUCKET_NAME"
-
-echo "Hello from Storage" > random.txt
-gsutil cp random.txt gs://${BUCKET_NAME}
-rm random.txt
-
-echo "Wait a little and read the logs"
-sleep 3
-gcloud alpha run services logs read $SERVICE_NAME \
-  --region $REGION --limit=100
+echo "TODO"

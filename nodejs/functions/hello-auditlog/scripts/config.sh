@@ -18,4 +18,7 @@ export PROJECT_ID=$(gcloud config get-value project)
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 export REGION=us-central1
 export RUNTIME=nodejs18
-export SERVICE_NAME=hello-auditlog-function-$RUNTIME
+export FUNCTION_NAME=hello-auditlog
+export ENTRY_POINT=helloAuditLog
+export SERVICE_TYPE=functions
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
