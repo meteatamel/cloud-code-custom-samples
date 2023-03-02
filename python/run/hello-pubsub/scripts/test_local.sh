@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# A binary-mode CloudEvent is one where the event data is stored in the message body,
-# and event attributes are stored as part of message metadata.
 
 echo "Trigger the function by sending a binary-mode CloudEvent with a Pub/Sub message as the event data"
 curl localhost:8080 -v \
@@ -35,7 +32,6 @@ curl localhost:8080 -v \
         },
         "subscription": "projects/MY-PROJECT/subscriptions/MY-SUB"
       }'
-
 
 # A structured-mode CloudEvent is one where the entire event (attributes and data) are encoded in the message body.
 

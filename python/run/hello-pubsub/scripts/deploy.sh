@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,17 +16,30 @@
 
 source $(dirname $0)/config.sh
 
-echo "Deploy $SERVICE_NAME to $REGION"
-gcloud run deploy $SERVICE_NAME \
-  --no-allow-unauthenticated \
-  --region $REGION \
-  --source ..
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+  echo "Deploy $SERVICE_NAME to $REGION"
+  gcloud functions deploy $SERVICE_NAME \
+    --entry-point HelloPubSub.Function \
+    --gen2 \
+    --region $REGION \
+    --runtime $RUNTIME \
+    --source .. \
+    --trigger-topic ${TOPIC_NAME}
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  echo "Deploy $SERVICE_NAME to $REGION"
+  gcloud run deploy $SERVICE_NAME \
+    --no-allow-unauthenticated \
+    --region $REGION \
+    --source ..
 
-echo "Create Eventarc trigger for $SERVICE_NAME"
-gcloud eventarc triggers create trigger-$SERVICE_NAME \
-  --destination-run-service=$SERVICE_NAME \
-  --destination-run-region=$REGION \
-  --event-filters="type=google.cloud.pubsub.topic.v1.messagePublished" \
-  --location=$REGION \
-  --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
-  --transport-topic=projects/$PROJECT_ID/topics/$TOPIC_NAME
+  echo "Create Eventarc trigger for $SERVICE_NAME"
+  gcloud eventarc triggers create trigger-$SERVICE_NAME \
+    --destination-run-service=$SERVICE_NAME \
+    --destination-run-region=$REGION \
+    --event-filters="type=google.cloud.pubsub.topic.v1.messagePublished" \
+    --location=$REGION \
+    --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
+    --transport-topic=projects/$PROJECT_ID/topics/$TOPIC_NAME
+fi

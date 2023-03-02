@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,20 @@
 source $(dirname $0)/config.sh
 
 echo "Enable required services"
+set -v
+
+# Required services for both functions and run
 gcloud services enable \
   artifactregistry.googleapis.com \
   cloudbuild.googleapis.com \
   eventarc.googleapis.com \
   run.googleapis.com
+
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+gcloud services enable \
+  cloudfunctions.googleapis.com
+fi
 
 echo "Grant the default Compute Engine service account the eventarc.eventReceiver IAM role. This is needed for Eventarc's AuditLog trigger"
 gcloud projects add-iam-policy-binding $PROJECT_ID \

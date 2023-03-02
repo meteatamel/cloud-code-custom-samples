@@ -20,26 +20,18 @@ if [ "$SERVICE_TYPE" = "functions" ]
 then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud functions deploy $SERVICE_NAME \
-    --entry-point HelloPubSub.Function \
+    --allow-unauthenticated \
+    --entry-point $ENTRY_POINT \
     --gen2 \
     --region $REGION \
     --runtime $RUNTIME \
     --source .. \
-    --trigger-topic ${TOPIC_NAME}
+    --trigger-http
 elif [ "$SERVICE_TYPE" = "run" ]
 then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud run deploy $SERVICE_NAME \
-    --no-allow-unauthenticated \
+    --allow-unauthenticated \
     --region $REGION \
     --source ..
-
-  echo "Create Eventarc trigger for $SERVICE_NAME"
-  gcloud eventarc triggers create trigger-$SERVICE_NAME \
-    --destination-run-service=$SERVICE_NAME \
-    --destination-run-region=$REGION \
-    --event-filters="type=google.cloud.pubsub.topic.v1.messagePublished" \
-    --location=$REGION \
-    --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
-    --transport-topic=projects/$PROJECT_ID/topics/$TOPIC_NAME
 fi

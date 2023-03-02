@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,5 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set -v
-curl http://localhost:8080
+source $(dirname $0)/config.sh
+
+echo "TODO"
