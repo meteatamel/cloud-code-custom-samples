@@ -44,4 +44,3 @@ then
     --location=$REGION \
     --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com
 fi
-# THIS IS A TEST

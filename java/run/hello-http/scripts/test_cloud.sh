@@ -28,4 +28,3 @@ then
   set -x
   curl $URL
 fi
-# THIS IS A TEST
