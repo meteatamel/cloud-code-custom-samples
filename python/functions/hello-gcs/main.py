@@ -7,12 +7,16 @@
 # limitations under the License.
 
 import functions_framework
+from google.cloud import logging
+
+logging_client = logging.Client()
+logger = logging_client.logger("test")
 
 # Register a CloudEvent function with the Functions Framework
 @functions_framework.cloud_event
 def hello_gcs(cloud_event):
-  print(f"Event ID: {cloud_event['id']}")
-  print(f"Event Type: {cloud_event['type']}")
+  logger.log_text(f"Event ID: {cloud_event['id']}")
+  logger.log_text(f"Event Type: {cloud_event['type']}")
 
   data = cloud_event.get_data()
   print(f"Bucket: {data['bucket']}")
