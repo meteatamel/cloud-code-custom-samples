@@ -16,4 +16,3 @@
 
 set -v
 curl http://localhost:8080
-# THIS IS A TEST
