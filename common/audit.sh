@@ -65,9 +65,9 @@ then
             do
                 for script in setup.sh deploy.sh test_local.sh test_cloud.sh
                 do
-                    if ! diff $language/$service/$app/scripts/$script $app/$script
+                    if ! diff ../$language/$service/$app/scripts/$script $app/$script
                     then
-                        echo "$language/$service/$app/scripts/$script" does NOT match "$app/$script"
+                        echo "../$language/$service/$app/scripts/$script" does NOT match "$app/$script"
                         exit 1
                     fi
                 done 
