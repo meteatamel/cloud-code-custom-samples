@@ -19,5 +19,6 @@ export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(pro
 export TOPIC_NAME="cloud-run-topic"
 export REGION=us-central1
 export RUNTIME=java
-export SERVICE_NAME=hello-pubsub-service-$RUNTIME
-
+export FUNCTION_NAME=hello-pubsub
+export SERVICE_TYPE=run
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME

@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +15,19 @@
 
 source $(dirname $0)/config.sh
 
-echo "Enable required services"
-gcloud services enable \
-  artifactregistry.googleapis.com \
-  cloudbuild.googleapis.com \
-  cloudfunctions.googleapis.com \
-  eventarc.googleapis.com \
-  run.googleapis.com
+echo "Triggering $SERVICE_NAME by sending a message to topic $TOPIC_NAME"
 
-echo "Create a Pub/Sub topic: $TOPIC_NAME"
-gcloud pubsub topics create ${TOPIC_NAME}
+gcloud pubsub topics publish ${TOPIC_NAME} --message="Mete Atamel"
+echo "Wait a little and read the logs"
+sleep 3
+
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+  gcloud functions logs read $SERVICE_NAME \
+    --gen2 \
+    --region $REGION --limit=10 --format "value(log)"
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  gcloud alpha run services logs read $SERVICE_NAME \
+    --region $REGION --limit=10
+fi

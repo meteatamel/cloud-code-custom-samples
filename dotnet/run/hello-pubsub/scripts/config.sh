@@ -15,9 +15,9 @@
 # limitations under the License.
 
 export PROJECT_ID=$(gcloud config get-value project)
-export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 export TOPIC_NAME="cloud-run-topic"
 export REGION=us-central1
 export RUNTIME=dotnet6
-export SERVICE_NAME=hello-pubsub-service-$RUNTIME
-
+export FUNCTION_NAME=hello-pubsub
+export SERVICE_TYPE=run
+export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
