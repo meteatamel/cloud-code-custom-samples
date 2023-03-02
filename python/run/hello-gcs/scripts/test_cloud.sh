@@ -34,3 +34,4 @@ then
   gcloud alpha run services logs read $SERVICE_NAME \
     --region $REGION --limit=10
 fi
+# THIS IS A TEST
