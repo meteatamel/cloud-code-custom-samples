@@ -4,18 +4,18 @@
 
 USAGE=$(cat <<EOF
 
-$0 add|rm|audit
+$0 add|rm|diff
 
           add - add a test line to common script files
           rm - remove test line from common script files
-          audit - verify common script files match propagated files in per app folder
+          diff - verify common script files match propagated files in per app folder
 
           Typical usage scenario:
               1. admin_scripts add
               2. push modified files to github
               3. wait few minutes for github workflow to run
               4. git pull
-              5. admin_scripts audit (to verify propagation)
+              5. admin_scripts diff (to verify propagation)
               5. admin_scripts rm
               6. push to github (revert common scripts back to original state)
 EOF
@@ -55,7 +55,7 @@ then
             echo test line not present in $i
         fi
     done
-elif [ "$1" == "audit" ]
+elif [ "$1" == "diff" ]
 then
     for language in java dotnet nodejs python
     do
