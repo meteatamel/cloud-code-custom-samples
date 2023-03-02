@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +23,14 @@ rm random.txt
 
 echo "Wait a little and read the logs"
 sleep 3
-gcloud functions logs read $SERVICE_NAME \
-  --gen2 \
-  --region $REGION --limit=100 --format "value(log)"
+
+if [ "$SERVICE_TYPE" = "functions" ]
+then
+  gcloud functions logs read $SERVICE_NAME \
+    --gen2 \
+    --region $REGION --limit=10 --format "value(log)"
+elif [ "$SERVICE_TYPE" = "run" ]
+then
+  gcloud alpha run services logs read $SERVICE_NAME \
+    --region $REGION --limit=10
+fi
