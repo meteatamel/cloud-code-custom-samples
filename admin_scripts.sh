@@ -30,8 +30,7 @@ fi
 
 if [ "$1" == add ]
 then
-    #for i in common/*/*.sh
-    for i in foo.sh
+    for i in common/*/*.sh
     do
         # make sure test line not already present
         if ! grep "$TEST_LINE" $i >/dev/null 2>&1
@@ -43,8 +42,7 @@ then
     done
 elif [ "$1" == "rm" ]
 then
-    #for i in common/*/*.sh
-    for i in foo.sh
+    for i in common/*/*.sh
     do
         # make sure test line is present
         if grep "$TEST_LINE" $i >/dev/null 2>&1
