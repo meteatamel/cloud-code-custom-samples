@@ -14,9 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config-common.sh
+export PROJECT_ID=$(gcloud config get-value project)
+export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
+export REGION=us-central1
 
-export RUNTIME=java17
-export ENTRY_POINT=functions.Function
-export SERVICE_TYPE=functions
-export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
+export TOPIC_NAME="cloud-functions-topic"
+
+export FUNCTION_NAME=hello-pubsub

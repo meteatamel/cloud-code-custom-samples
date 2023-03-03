@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source $(dirname $0)/config-common.sh
+export PROJECT_ID=$(gcloud config get-value project)
+export REGION=us-central1
+export FUNCTION_NAME=hello-http
 
-export RUNTIME=java17
-export ENTRY_POINT=functions.Function
-export SERVICE_TYPE=functions
-export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
+
+

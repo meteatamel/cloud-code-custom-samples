@@ -14,11 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-export PROJECT_ID=$(gcloud config get-value project)
-export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
-export BUCKET_NAME="cloud-run-bucket-${PROJECT_ID}"
-export REGION=us-central1
+source $(dirname $0)/config-common.sh
+
 export RUNTIME=python310
-export FUNCTION_NAME=hello-gcs
 export SERVICE_TYPE=run
 export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME

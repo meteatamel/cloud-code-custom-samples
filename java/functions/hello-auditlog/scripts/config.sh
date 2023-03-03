@@ -14,11 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-export PROJECT_ID=$(gcloud config get-value project)
-export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
-export REGION=us-central1
+source $(dirname $0)/config-common.sh
+
 export RUNTIME=java17
 export FUNCTION_NAME=hello-auditlog
-export ENTRY_POINT=functions.Function
 export SERVICE_TYPE=functions
 export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME

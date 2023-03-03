@@ -14,11 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-export PROJECT_ID=$(gcloud config get-value project)
-export TOPIC_NAME="cloud-functions-topic"
-export REGION=us-central1
+source $(dirname $0)/config-common.sh
+
 export RUNTIME=nodejs18
-export FUNCTION_NAME=hello-pubsub
 export ENTRY_POINT=helloPubSub
 export SERVICE_TYPE=functions
 export SERVICE_NAME=$FUNCTION_NAME-$SERVICE_TYPE-$RUNTIME
