@@ -40,8 +40,8 @@ Event Type: google.cloud.storage.object.v1.finalized
 Bucket: MY_BUCKET
 File: MY_FILE.txt
 Metageneration: 1
-Created: 2020-04-23T07:38:57.230Z
-Updated: 2020-04-23T07:38:57.230Z
+Created: 2020-04-23 07:38:57.230000+00:00
+Updated: 2020-04-23 07:38:57.230000+00:00
 ```
 
 ## Before deploying to Google Cloud

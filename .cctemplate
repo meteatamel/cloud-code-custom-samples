@@ -147,6 +147,11 @@
             "path": "python/run/hello-http",
             "name": "Python: Cloud Run - hello-http",
             "description": "An HTTP triggered Python Cloud Run template"
+        },
+        {
+            "path": "python/run/hello-gcs",
+            "name": "Python: Cloud Run - hello-gcs",
+            "description": "A Cloud Storage triggered Python Cloud Run template"
         }
     ]
 }

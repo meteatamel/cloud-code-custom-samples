@@ -127,6 +127,8 @@ Python:
 
 * [Python: Cloud Run - hello-http](python/run/hello-http) - An HTTP triggered
   Python Cloud Run template.
+* [Python: Cloud Run - hello-gcs](python/run/hello-gcs) - A Cloud Storage triggered
+  Python Cloud Run template.
 
 -------
 
