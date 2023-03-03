@@ -129,6 +129,8 @@ Python:
   Python Cloud Run template.
 * [Python: Cloud Run - hello-gcs](python/run/hello-gcs) - A Cloud Storage triggered
   Python Cloud Run template.
+* [Python: Cloud Run - hello-pubsub](python/run/hello-pubsub) - A Pub/Sub triggered
+  Python Cloud Run template.
 
 -------
 
