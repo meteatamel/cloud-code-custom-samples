@@ -134,6 +134,16 @@
             "description": "A Cloud Storage triggered Python Cloud Functions template"
         },
         {
+            "path": "python/functions/hello-pubsub",
+            "name": "Python: Cloud Functions - hello-pubsub",
+            "description": "A Pub/Sub triggered Python Cloud Functions template"
+        },
+        {
+            "path": "python/functions/hello-auditlog",
+            "name": "Python: Cloud Functions - hello-auditlog",
+            "description": "An AuditLog triggered Python Cloud Functions template"
+        },
+        {
             "path": "python/run/hello-http",
             "name": "Python: Cloud Run - hello-http",
             "description": "An HTTP triggered Python Cloud Run template"

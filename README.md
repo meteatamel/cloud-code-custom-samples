@@ -83,6 +83,10 @@ Python:
   HTTP triggered Python Cloud Functions template.
 * [Python: Cloud Functions - hello-gcs](python/functions/hello-gcs) - A
   Cloud Storage triggered Python Cloud Functions template.
+* [Python: Cloud Functions - hello-pubsub](python/functions/hello-pubsub) - A
+  Pub/Sub triggered Python Cloud Functions template.
+* [Python: Cloud Functions - hello-auditlog](python/functions/hello-auditLog) - An
+  AuditLog triggered Python Cloud Functions template.
 
 ### Cloud Run
 

@@ -25,10 +25,8 @@ test the function locally:
 ```sh
 ./test_local.sh
 
-< HTTP/1.1 204 No Content
-< Date: Tue, 21 Feb 2023 08:23:04 GMT
-< Connection: keep-alive
-< Keep-Alive: timeout=5
+< HTTP/1.1 200 OK
+< Server: Werkzeug/2.2.3 Python/3.10.4
 ```
 
 You should see the following in the function logs:
@@ -36,7 +34,7 @@ You should see the following in the function logs:
 ```sh
 Event ID: 6308619096677818
 Event Type: google.cloud.pubsub.topic.v1.messagePublished
-TextData: Hello World
+TextData: b'Hello World'
 Subscription: projects/MY-PROJECT/subscriptions/MY-SUB
 ```
 

@@ -15,6 +15,7 @@
 # limitations under the License.
 
 export PROJECT_ID=$(gcloud config get-value project)
+export TOPIC_NAME="cloud-functions-topic"
 export REGION=us-central1
 export RUNTIME=python310
 export FUNCTION_NAME=hello-pubsub

@@ -8,17 +8,14 @@
 
 import functions_framework
 import json
-from google.events.cloud.storage_v1 import StorageObjectData
+from google.events.cloud.pubsub_v1 import MessagePublishedData
 
 # Register a CloudEvent function with the Functions Framework
 @functions_framework.cloud_event
-def hello_gcs(cloud_event):
+def hello_pubsub(cloud_event):
   print(f"Event ID: {cloud_event['id']}")
   print(f"Event Type: {cloud_event['type']}")
 
-  storage_object_data = StorageObjectData.from_json(json.dumps(cloud_event.data))
-  print(f"Bucket: {storage_object_data.bucket}")
-  print(f"File: {storage_object_data.name}")
-  print(f"Metageneration: {storage_object_data.metageneration}")
-  print(f"Created: {storage_object_data.time_created}")
-  print(f"Updated: {storage_object_data.updated}")
+  message_published_data = MessagePublishedData.from_json(json.dumps(cloud_event.data))
+  print(f"TextData: {message_published_data.message.data}");
+  print(f"Subscription: {message_published_data.subscription}");
