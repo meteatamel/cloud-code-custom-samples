@@ -25,10 +25,10 @@ test the function locally:
 ```sh
 ./test_local.sh
 
-< HTTP/1.1 204 No Content
-< Date: Mon, 20 Feb 2023 14:45:00 GMT
-< Connection: keep-alive
-< Keep-Alive: timeout=5
+< HTTP/1.1 200 OK
+< Server: Werkzeug/2.2.3 Python/3.10.4
+< Date: Fri, 03 Mar 2023 08:12:36 GMT
+< Content-Type: text/html; charset=utf-8
 ```
 
 You should see the following in the function logs:
@@ -39,8 +39,8 @@ Event Type: google.cloud.storage.object.v1.finalized
 Bucket: MY_BUCKET
 File: MY_FILE.txt
 Metageneration: 1
-Created: 2020-04-23T07:38:57.230Z
-Updated: 2020-04-23T07:38:57.230Z
+Created: 2020-04-23 07:38:57.230000+00:00
+Updated: 2020-04-23 07:38:57.230000+00:00
 ```
 
 ## Before deploying to Google Cloud

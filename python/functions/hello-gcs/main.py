@@ -7,21 +7,18 @@
 # limitations under the License.
 
 import functions_framework
-from google.cloud import logging
-
-logging_client = logging.Client()
-logger = logging_client.logger("test")
+import json
+from google.events.cloud import storage
 
 # Register a CloudEvent function with the Functions Framework
 @functions_framework.cloud_event
 def hello_gcs(cloud_event):
-  logger.log_text(f"Event ID: {cloud_event['id']}")
-  logger.log_text(f"Event Type: {cloud_event['type']}")
+  print(f"Event ID: {cloud_event['id']}")
+  print(f"Event Type: {cloud_event['type']}")
 
-  data = cloud_event.get_data()
-  print(f"Bucket: {data['bucket']}")
-  print(f"File: {data['name']}")
-  print(f"Metageneration: {data['metageneration']}")
-  print(f"Created: {data['timeCreated']}")
-  print(f"Updated: {data['updated']}")
-  return "OK"
+  storageObjectData = storage.StorageObjectData.from_json(json.dumps(cloud_event.data))
+  print(f"Bucket: {storageObjectData.bucket}")
+  print(f"File: {storageObjectData.name}")
+  print(f"Metageneration: {storageObjectData.metageneration}")
+  print(f"Created: {storageObjectData.time_created}")
+  print(f"Updated: {storageObjectData.updated}")
