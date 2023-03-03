@@ -20,7 +20,7 @@ if [ "$SERVICE_TYPE" = "functions" ]
 then
   echo "Deploy $SERVICE_NAME to $REGION"
   gcloud functions deploy $SERVICE_NAME \
-    --entry-point HelloPubSub.Function \
+    --entry-point $ENTRY_POINT \
     --gen2 \
     --region $REGION \
     --runtime $RUNTIME \
