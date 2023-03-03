@@ -25,19 +25,16 @@ test locally:
 ```sh
 ./test_local.sh
 
-< HTTP/1.1 204 No Content
-< X-Powered-By: Express
-< Date: Tue, 21 Feb 2023 12:56:12 GMT
-< Connection: keep-alive
-< Keep-Alive: timeout=5
+< HTTP/1.1 204 NO CONTENT
+< Server: Werkzeug/2.2.3 Python/3.10.4
+< Date: Fri, 03 Mar 2023 10:26:04 GMT
 ```
 
 You should see the following in the service logs:
 
 ```sh
 Event ID: projects/test-project/logs/cloudaudit.googleapis.com%2Fdata_access1234567123456789
-Event type: google.cloud.audit.log.v1.written
-Subject: bigquery.googleapis.com/projects/test-project/jobs/sample-job
+Event Type: google.cloud.audit.log.v1.written
 ServiceName: bigquery.googleapis.com
 MethodName: jobservice.jobcompleted
 ResourceName: projects/test-project/jobs/sample-job

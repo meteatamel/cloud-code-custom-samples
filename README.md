@@ -131,6 +131,8 @@ Python:
   Python Cloud Run template.
 * [Python: Cloud Run - hello-pubsub](python/run/hello-pubsub) - A Pub/Sub triggered
   Python Cloud Run template.
+* [Python: Cloud Run - hello-auditlog](python/run/hello-auditLog) - An AuditLog
+  triggered Python Cloud Run template.
 
 -------
 
