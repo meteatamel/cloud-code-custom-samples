@@ -81,6 +81,8 @@ Python:
 
 * [Python: Cloud Functions - hello-http](python/functions/hello-http) - An
   HTTP triggered Python Cloud Functions template.
+* [Python: Cloud Functions - hello-gcs](python/functions/hello-gcs) - A
+  Cloud Storage triggered Python Cloud Functions template.
 
 ### Cloud Run
 

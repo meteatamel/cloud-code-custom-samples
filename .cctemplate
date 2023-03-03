@@ -129,6 +129,11 @@
             "description": "An HTTP triggered Python Cloud Functions template"
         },
         {
+            "path": "python/functions/hello-gcs",
+            "name": "Python: Cloud Functions - hello-gcs",
+            "description": "A Cloud Storage triggered Python Cloud Functions template"
+        },
+        {
             "path": "python/run/hello-http",
             "name": "Python: Cloud Run - hello-http",
             "description": "An HTTP triggered Python Cloud Run template"
