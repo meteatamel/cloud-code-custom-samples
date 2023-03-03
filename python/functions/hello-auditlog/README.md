@@ -35,8 +35,7 @@ You should see the following in the function logs:
 
 ```sh
 Event ID: projects/test-project/logs/cloudaudit.googleapis.com%2Fdata_access1234567123456789
-Event type: google.cloud.audit.log.v1.written
-Subject: bigquery.googleapis.com/projects/test-project/jobs/sample-job
+Event Type: google.cloud.audit.log.v1.written
 ServiceName: bigquery.googleapis.com
 MethodName: jobservice.jobcompleted
 ResourceName: projects/test-project/jobs/sample-job

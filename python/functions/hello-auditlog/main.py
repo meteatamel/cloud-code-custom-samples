@@ -8,17 +8,17 @@
 
 import functions_framework
 import json
-from google.events.cloud import storage_v1
+from google.events.cloud import audit_v1
 
 # Register a CloudEvent function with the Functions Framework
 @functions_framework.cloud_event
-def hello_gcs(cloud_event):
+def hello_auditlog(cloud_event):
   print(f"Event ID: {cloud_event['id']}")
   print(f"Event Type: {cloud_event['type']}")
 
-  storage_object_data = storage_v1.StorageObjectData.from_json(json.dumps(cloud_event.data))
-  print(f"Bucket: {storage_object_data.bucket}")
-  print(f"File: {storage_object_data.name}")
-  print(f"Metageneration: {storage_object_data.metageneration}")
-  print(f"Created: {storage_object_data.time_created}")
-  print(f"Updated: {storage_object_data.updated}")
+  log_entry_data = audit_v1.LogEntryData.from_json(json.dumps(cloud_event.data))
+  payload = log_entry_data.proto_payload
+  if payload:
+    print(f"ServiceName: {payload.service_name}")
+    print(f"MethodName: {payload.method_name}")
+    print(f"ResourceName: {payload.resource_name}")
