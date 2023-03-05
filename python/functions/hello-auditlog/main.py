@@ -8,15 +8,18 @@
 
 import functions_framework
 import json
+# FIXME: This ends up with ModuleNotFoundError: No module named 'google.api'
+from google.events.cloud.audit_v1 import LogEntryData
 
 # Register a CloudEvent function with the Functions Framework
 @functions_framework.cloud_event
 def hello_auditlog(cloud_event):
-    print(f"Event ID: {cloud_event['id']}")
-    print(f"Event Type: {cloud_event['type']}")
+  print(f"Event ID: {cloud_event['id']}")
+  print(f"Event Type: {cloud_event['type']}")
 
-    payload = cloud_event.data.get("protoPayload")
-    if payload:
-        print(f"ServiceName: {payload.get('service_name')}")
-        print(f"MethodName: {payload.get('method_name')}")
-        print(f"ResourceName: {payload.get('resource_name')}")
+  log_entry_data = LogEntryData.from_json(json.dumps(cloud_event.data))
+  payload = log_entry_data.proto_payload
+  if payload:
+    print(f"ServiceName: {payload.service_name}")
+    print(f"MethodName: {payload.method_name}")
+    print(f"ResourceName: {payload.resource_name}")
