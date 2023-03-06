@@ -16,7 +16,7 @@ $0 add|rm|diff
               3. wait a few minutes for github workflow to run
               4. git pull
               5. audit.sh diff (to verify propagation)
-              6. admin_scripts rm
+              6. audit.sh rm
               7. push to github (revert common scripts back to original state)
               8. audit.sh diff (re-verify)
 EOF
