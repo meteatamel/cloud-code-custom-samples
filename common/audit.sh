@@ -19,7 +19,7 @@ $0 add|rm|diff
               6. admin_scripts rm
               7. push to github (revert common scripts back to original state)
               8. audit.sh diff (re-verify)
-sss
+EOF
 )
              
 TEST_LINE="# THIS IS A TEST"
