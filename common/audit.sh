@@ -22,6 +22,7 @@ EOF
 )
              
 TEST_LINE="# THIS IS A TEST"
+WARNING="# GENERATED FILE - DO NOT EDIT (source lives in common folder)"
 
 if [ "$#" != 1 ]
 then

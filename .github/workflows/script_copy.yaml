@@ -26,7 +26,12 @@ jobs:
         for language in java nodejs dotnet python; do
           for service in functions run; do
             for app in hello-http hello-gcs hello-auditlog hello-pubsub; do
-              cp common/$app/*.sh $language/$service/$app/scripts
+              for script in common/$app/*.sh
+              do
+                file=`basename $script`
+                echo "# GENERATED FILE - DO NOT EDIT (source lives in common folder)" >$language/$service/$app/scripts/$file
+                cat $script >>$language/$service/$app/scripts/$file
+              done
             done
           done
         done
