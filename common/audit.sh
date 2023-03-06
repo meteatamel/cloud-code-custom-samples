@@ -31,6 +31,13 @@ then
     exit 1
 fi
 
+for i in */*.sh
+do
+  if [ ! -z "$(tail -c 1 <"$i")" ]; then
+    echo >>$i
+  fi
+done
+
 if [ "$1" == add ]
 then
     for i in */*.sh
