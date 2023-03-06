@@ -52,6 +52,7 @@ then
             OUT="$(mktemp)" 
             ghead -n -1 $i >$OUT
             cp $OUT $i
+            rm $OUT
         else
             echo test line not present in $i
         fi
@@ -66,11 +67,15 @@ then
             do
                 for script in setup.sh deploy.sh test_local.sh test_cloud.sh
                 do
-                    if ! diff ../$language/$service/$app/scripts/$script $app/$script
+                    OUT="$(mktemp)" 
+                    grep -v "$WARNING" ../$language/$service/$app/scripts/$script >$OUT
+                    if ! diff $OUT $app/$script
                     then
                         echo "../$language/$service/$app/scripts/$script" does NOT match "$app/$script"
+                        rm $OUT
                         exit 1
                     fi
+                    rm $OUT
                 done 
             done 
         done
