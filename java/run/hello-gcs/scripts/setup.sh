@@ -17,7 +17,6 @@
 source $(dirname $0)/config.sh
 
 echo "Enable required services"
-set -v
 
 # Required services for both functions and run
 gcloud services enable \
