@@ -37,4 +37,3 @@ then
     --region $REGION \
     --source ..
 fi
-# THIS IS A TEST

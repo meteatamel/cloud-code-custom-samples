@@ -30,4 +30,3 @@ then
 gcloud services enable \
   cloudfunctions.googleapis.com
 fi
-# THIS IS A TEST

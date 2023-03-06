@@ -108,4 +108,3 @@ curl localhost:8080 -v \
         "severity": "INFO",
         "timestamp": "2021-11-25T21:56:00.276607Z"
       }'
-# THIS IS A TEST

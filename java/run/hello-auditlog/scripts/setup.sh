@@ -38,4 +38,3 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role roles/eventarc.eventReceiver
 
 echo "Note: You need to double check that AuditLogs are enabled for the service you're interested in listening events from."
-# THIS IS A TEST

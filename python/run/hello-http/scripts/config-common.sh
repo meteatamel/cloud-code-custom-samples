@@ -21,4 +21,3 @@ export FUNCTION_NAME=hello-http
 
 
 
-# THIS IS A TEST
