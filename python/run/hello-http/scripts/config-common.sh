@@ -1,3 +1,4 @@
+# GENERATED FILE - DO NOT EDIT (source lives in common folder)
 #!/bin/bash
 
 # Copyright 2022 Google LLC
