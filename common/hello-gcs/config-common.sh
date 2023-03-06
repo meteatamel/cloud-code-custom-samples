@@ -22,3 +22,4 @@ export BUCKET_NAME="cloud-functions-bucket-${PROJECT_ID}"
 
 export FUNCTION_NAME=hello-gcs
 
+# THIS IS A TEST

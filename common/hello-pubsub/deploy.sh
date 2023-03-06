@@ -43,3 +43,4 @@ then
     --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
     --transport-topic=projects/$PROJECT_ID/topics/$TOPIC_NAME
 fi
+# THIS IS A TEST

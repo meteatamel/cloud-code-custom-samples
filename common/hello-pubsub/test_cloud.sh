@@ -27,3 +27,4 @@ elif [ "$SERVICE_TYPE" = "run" ]
 then
   echo "gcloud alpha run services logs read $SERVICE_NAME --region $REGION --limit=50"
 fi
+# THIS IS A TEST

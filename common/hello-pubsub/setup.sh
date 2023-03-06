@@ -33,3 +33,4 @@ fi
 
 echo "Create a Pub/Sub topic: $TOPIC_NAME"
 gcloud pubsub topics create ${TOPIC_NAME}
+# THIS IS A TEST
