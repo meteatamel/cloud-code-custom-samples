@@ -16,18 +16,14 @@
 source $(dirname $0)/config.sh
 
 echo "Triggering $SERVICE_NAME by sending a message to topic $TOPIC_NAME"
-
 gcloud pubsub topics publish ${TOPIC_NAME} --message="Mete Atamel"
-echo "Wait a little and read the logs"
-sleep 3
+
+echo "Wait a little and read the logs to see the event using the following command:"
 
 if [ "$SERVICE_TYPE" = "functions" ]
 then
-  gcloud functions logs read $SERVICE_NAME \
-    --gen2 \
-    --region $REGION --limit=10 --format "value(log)"
+  echo "gcloud functions logs read $SERVICE_NAME --gen2 --region $REGION --limit=50 --format \"value(log)"\"
 elif [ "$SERVICE_TYPE" = "run" ]
 then
-  gcloud alpha run services logs read $SERVICE_NAME \
-    --region $REGION --limit=10
+  echo "gcloud alpha run services logs read $SERVICE_NAME --region $REGION --limit=50"
 fi
