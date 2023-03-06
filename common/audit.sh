@@ -11,14 +11,15 @@ $0 add|rm|diff
           diff - verify common script files match propagated files in per app folder
 
           Typical usage scenario:
-              1. admin_scripts add
+              1. audit.sh add
               2. push modified files to github
-              3. wait few minutes for github workflow to run
+              3. wait a few minutes for github workflow to run
               4. git pull
-              5. admin_scripts diff (to verify propagation)
-              5. admin_scripts rm
-              6. push to github (revert common scripts back to original state)
-EOF
+              5. audit.sh diff (to verify propagation)
+              6. admin_scripts rm
+              7. push to github (revert common scripts back to original state)
+              8. audit.sh diff (re-verify)
+sss
 )
              
 TEST_LINE="# THIS IS A TEST"
