@@ -46,3 +46,4 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 
 echo "Create a Google Cloud Storage bucket: $BUCKET_NAME"
 gsutil mb -l us-central1 gs://${BUCKET_NAME}
+# THIS IS A TEST
