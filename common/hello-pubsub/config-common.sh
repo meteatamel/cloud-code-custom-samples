@@ -20,3 +20,4 @@ export REGION=us-central1
 
 export TOPIC_NAME="cloud-functions-topic"
 
+export FUNCTION_NAME=hello-pubsub
