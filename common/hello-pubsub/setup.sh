@@ -31,5 +31,9 @@ gcloud services enable \
   cloudfunctions.googleapis.com
 fi
 
-echo "Create a Pub/Sub topic: $TOPIC_NAME"
-gcloud pubsub topics create ${TOPIC_NAME}
+if gcloud pubsub topics describe "${TOPIC_NAME}" --format="value(name)" > /dev/null 2>&1; then
+  echo "Pub/Sub topic already exists: ${TOPIC_NAME}"
+else
+  echo "Create a Pub/Sub topic: $TOPIC_NAME"
+  gcloud pubsub topics create ${TOPIC_NAME}
+fi
