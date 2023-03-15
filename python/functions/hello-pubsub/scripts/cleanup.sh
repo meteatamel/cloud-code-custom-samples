@@ -28,4 +28,11 @@ then
   echo "Delete $SERVICE_NAME in $REGION"
   gcloud run services delete $SERVICE_NAME \
     --region $REGION
+
+  echo "Delete Eventarc trigger-$SERVICE_NAME"
+  gcloud eventarc triggers delete trigger-$SERVICE_NAME \
+    --location=$REGION
 fi
+
+echo "Delete Pub/Sub topic: $TOPIC_NAME"
+gcloud pubsub topics delete ${TOPIC_NAME}
