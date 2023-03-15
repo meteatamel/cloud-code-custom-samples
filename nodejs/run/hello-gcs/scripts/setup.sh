@@ -48,5 +48,5 @@ if gsutil ls -d "gs://${BUCKET_NAME}/" > /dev/null 2>&1; then
   echo "Storage bucket already exists: ${BUCKET_NAME}"
 else
   echo "Create a storage bucket: ${BUCKET_NAME}"
-  gsutil mb -l us-central1 gs://${BUCKET_NAME}
+  gsutil mb -l $REGION gs://${BUCKET_NAME}
 fi
