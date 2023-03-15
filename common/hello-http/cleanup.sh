@@ -28,3 +28,4 @@ then
   gcloud run services delete $SERVICE_NAME \
     --region $REGION
 fi
+

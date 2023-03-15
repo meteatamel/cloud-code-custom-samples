@@ -31,6 +31,7 @@ jobs:
                 file=`basename $script`
                 echo "# GENERATED FILE - DO NOT EDIT (source lives in common folder)" >$language/$service/$app/scripts/$file
                 cat $script >>$language/$service/$app/scripts/$file
+                chmod +x $language/$service/$app/scripts/$file
               done
             done
           done

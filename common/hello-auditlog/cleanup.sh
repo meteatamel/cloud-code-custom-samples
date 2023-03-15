@@ -32,3 +32,4 @@ then
   gcloud eventarc triggers delete trigger-$SERVICE_NAME \
     --location=$REGION
 fi
+
