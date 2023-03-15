@@ -71,3 +71,12 @@ Run [test_cloud.sh](scripts/test_cloud.sh) to test the service in Google Cloud:
 ```sh
 ./test_cloud.sh
 ```
+
+## Cleanup
+
+When you're done, you can cleanup created resources:
+
+```sh
+./cleanup.sh
+```
+

@@ -59,3 +59,11 @@ Run [deploy.sh](scripts/deploy.sh) to deploy to Google Cloud:
 ## Test in Google Cloud
 
 TODO
+
+## Cleanup
+
+When you're done, you can cleanup created resources:
+
+```sh
+./cleanup.sh
+```
