@@ -36,3 +36,4 @@ fi
 
 echo "Delete storage bucket: ${BUCKET_NAME}"
 gsutil rm -r gs://${BUCKET_NAME}
+
